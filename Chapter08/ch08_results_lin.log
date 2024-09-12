@@ -1,0 +1,443 @@
+
+----- Results for example Ch08_01 -----
+
+----- Ch08_01_ex1() -----
+
+set1 (initial values):   
+size: 6  bucket_count: 13  load_factor: 0.4615
+
+bucket  3: 'Bering Sea' 
+bucket  6: 'Gulf of Thailand' 
+bucket 11: 'Black Sea' 'Gulf of Alaska' 
+bucket 12: 'Red Sea' 'Caribbean Sea' 
+
+set1 (after insert_range):   
+size: 18  bucket_count: 29  load_factor: 0.6207
+
+bucket  0: 'North Sea' 
+bucket  1: 'Bering Sea' 
+bucket  5: 'Gulf of Mexico' 
+bucket  9: 'Gulf of Biscay' 'Caribbean Sea' 'Greenland Sea' 
+bucket 12: 'Gulf of Thailand' 'Ross Sea' 'Yellow Sea' 
+bucket 18: 'Scotia Sea' 
+bucket 19: 'Adriatic Sea' 'Mediterranean Sea' 
+bucket 20: 'Amundsen Gulf' 
+bucket 21: 'Labrador Sea' 
+bucket 24: 'Gulf of Alaska' 
+bucket 25: 'Baltic Sea' 
+bucket 26: 'Red Sea' 
+bucket 27: 'Black Sea' 
+
+----- Ch08_01_ex2() -----
+
+set2 (initial values):   
+size: 8  bucket_count: 13  load_factor: 0.6154
+
+bucket  2: 'Caspian Sea' 'Baffin Bay' 
+bucket  5: 'Yellow Sea' 
+bucket  6: 'North Sea' 
+bucket  8: 'Arabian Sea' 
+bucket 11: 'Beaufort Sea' 
+bucket 12: 'Gulf of Biscay' 'Red Sea' 
+
+set1 (after merge):   
+size: 4  bucket_count: 29  load_factor: 0.1379
+
+bucket  0: 'North Sea' 
+bucket  9: 'Gulf of Biscay' 
+bucket 12: 'Yellow Sea' 
+bucket 26: 'Red Sea' 
+
+set2 (after merge):   
+size: 22  bucket_count: 29  load_factor: 0.7586
+
+bucket  0: 'North Sea' 
+bucket  1: 'Bering Sea' 
+bucket  5: 'Gulf of Mexico' 
+bucket  7: 'Arabian Sea' 
+bucket  9: 'Greenland Sea' 'Caribbean Sea' 'Gulf of Biscay' 
+bucket 10: 'Beaufort Sea' 
+bucket 12: 'Ross Sea' 'Gulf of Thailand' 'Yellow Sea' 
+bucket 18: 'Scotia Sea' 
+bucket 19: 'Mediterranean Sea' 'Adriatic Sea' 
+bucket 20: 'Amundsen Gulf' 
+bucket 21: 'Labrador Sea' 
+bucket 23: 'Baffin Bay' 
+bucket 24: 'Gulf of Alaska' 'Caspian Sea' 
+bucket 25: 'Baltic Sea' 
+bucket 26: 'Red Sea' 
+bucket 27: 'Black Sea' 
+
+set2.contains("North Sea"): true
+set2.contains("Java Sea"): false
+
+extract_sea: Black Sea - found
+extract_sea: Green Sea - not found
+extract_sea: Red Sea - found
+
+set2 (after extracts):   
+size: 22  bucket_count: 29  load_factor: 0.7586
+
+bucket  0: 'North Sea' 
+bucket  1: 'Bering Sea' 
+bucket  4: 'BLACK SEA' 
+bucket  5: 'Gulf of Mexico' 
+bucket  7: 'Arabian Sea' 
+bucket  9: 'Greenland Sea' 'Caribbean Sea' 'Gulf of Biscay' 
+bucket 10: 'Beaufort Sea' 
+bucket 12: 'Ross Sea' 'Gulf of Thailand' 'Yellow Sea' 
+bucket 13: 'RED SEA' 
+bucket 18: 'Scotia Sea' 
+bucket 19: 'Mediterranean Sea' 'Adriatic Sea' 
+bucket 20: 'Amundsen Gulf' 
+bucket 21: 'Labrador Sea' 
+bucket 23: 'Baffin Bay' 
+bucket 24: 'Gulf of Alaska' 'Caspian Sea' 
+bucket 25: 'Baltic Sea' 
+
+----- Ch08_01_ex3() -----
+
+set1 (initial values):   
+size: 20  bucket_count: 29  load_factor: 0.6897
+
+bucket  2: 'Huron' 
+bucket  8: 'Champlain' 'Ontario' 
+bucket  9: 'Mead' 
+bucket 10: 'Pyramid' 'Becharof' 
+bucket 12: 'Sakakawea' 
+bucket 15: 'Superior' 
+bucket 16: 'Seneca' 
+bucket 17: 'Erie' 
+bucket 20: 'Iliamna' 'Crater' 
+bucket 21: 'Yellowstone' 'Michigan' 
+bucket 23: 'Cayuga' 
+bucket 24: 'Tahoe' 
+bucket 25: 'Clark' 
+bucket 26: 'Bear' 'Flathead' 'Pontchartrain' 
+
+set1 (after removals):   
+size: 17  bucket_count: 29  load_factor: 0.5862
+
+bucket  2: 'Huron' 
+bucket  8: 'Champlain' 'Ontario' 
+bucket  9: 'Mead' 
+bucket 10: 'Pyramid' 'Becharof' 
+bucket 17: 'Erie' 
+bucket 20: 'Iliamna' 'Crater' 
+bucket 21: 'Yellowstone' 'Michigan' 
+bucket 23: 'Cayuga' 
+bucket 24: 'Tahoe' 
+bucket 25: 'Clark' 
+bucket 26: 'Bear' 'Flathead' 'Pontchartrain' 
+
+----- Ch08_01_ex4() -----
+--- Bucket values for 'colors' ---  
+size: 141  bucket_count: 53  load_factor: 2.6604
+
+bucket  0:  MintCream MediumTurquoise Ivory DarkGreen Crimson Black
+bucket  1:  DeepSkyBlue
+bucket  2:  Chartreuse BlueViolet
+bucket  3:  PaleVioletRed LightSlateGray
+bucket  4:  MediumSpringGreen LightBlue Gray DarkRed
+bucket  5:  MediumBlue GreenYellow Blue
+bucket  6:  Turquoise Silver LightGreen
+bucket  7:  SpringGreen
+bucket  8:  OldLace Maroon
+bucket  9:  DarkKhaki
+bucket 10:  Yellow PowderBlue LightGoldenrodYellow Lavender Khaki Honeydew Gainsboro DarkSalmon Beige
+bucket 11:  SlateBlue
+bucket 12:  MidnightBlue LightSalmon DarkOrchid
+bucket 14:  SandyBrown AquaMarine
+bucket 15:  White LightPink LavenderBlush DimGray
+bucket 16:  PaleTurquoise
+bucket 17:  MediumOrchid DarkGray
+bucket 18:  Green
+bucket 19:  RosyBrown DarkSeaGreen
+bucket 20:  Orange Linen Goldenrod Gold FloralWhite DarkOrange Chocolate
+bucket 21:  GhostWhite
+bucket 22:  MediumAquamarine Coral
+bucket 23:  PeachPuff MistyRose MediumVioletRed LightGray DarkCyan
+bucket 24:  YellowGreen IndianRed
+bucket 25:  Azure AntiqueWhite
+bucket 26:  Olive LawnGreen
+bucket 27:  SeaGreen PapayaWhip
+bucket 28:  Navy CadetBlue
+bucket 29:  Moccasin
+bucket 30:  Tan SteelBlue Snow Red PaleGreen PaleGoldenrod LimeGreen Lime Indigo
+bucket 31:  Wheat SkyBlue RebeccaPurple CornFlowerBlue Burlywood
+bucket 32:  Salmon
+bucket 33:  MediumPurple AliceBlue
+bucket 34:  Orchid LightYellow LightSteelBlue Brown
+bucket 35:  WhiteSmoke Pink NavajoWhite Magenta LemonChiffon Fuchsia Cyan Aqua
+bucket 36:  Violet Purple LightCoral
+bucket 37:  SaddleBrown Plum
+bucket 38:  Thistle Seashell Cornsilk
+bucket 39:  OliveDrab DarkViolet DarkGoldenrod DarkBlue
+bucket 40:  MediumSlateBlue LightSeaGreen HotPink
+bucket 41:  Peru
+bucket 42:  ForestGreen
+bucket 43:  DarkMagenta
+bucket 44:  SlateGray OrangeRed Bisque
+bucket 45:  Tomato RoyalBlue DarkTurquoise DarkSlateGray BlanchedAlmond
+bucket 46:  Teal LightSkyBlue Firebrick
+bucket 47:  Sienna MediumSeaGreen DeepPink DarkSlateBlue
+bucket 49:  LightCyan DodgerBlue DarkOliveGreen
+
+----- Results for example Ch08_02 -----
+
+----- Ch08_02_ex1() -----
+
+test_color1: [LightSalmon          0xFFA07A]
+test_color2: [DarkOliveGreen       0x556B2F]
+
+colors (initial values):
+size: 28  bucket_count: 29  load_factor:  0.9655172
+
+bucket  1: [Tan                  0xD2B48C]  
+bucket  2: [BlueViolet           0x8A2BE2]  
+bucket  4: [AliceBlue            0xF0F8FF]  [AliceBlue            0xF0F8FF]  
+           [Gray                 0x808080]  
+bucket  6: [Cyan                 0x00FFFF]  [Cyan                 0x00FFFF]  
+bucket  8: [Maroon               0x800000]  [Maroon               0x800000]  
+           [Plum                 0xDDA0DD]  
+bucket 12: [MidnightBlue         0x191970]  [LightSalmon          0xFFA07A]  
+           [LightSalmon          0xFFA07A]  [LightSalmon          0xFFA07A]  
+           [LightSalmon          0xFFA07A]  [DarkOrchid           0x9932CC]  
+bucket 15: [LavenderBlush        0xFFF0F5]  [LavenderBlush        0xFFF0F5]  
+           [DimGray              0x696969]  [DimGray              0x696969]  
+           [OrangeRed            0xFF4500]  [OrangeRed            0xFF4500]  
+bucket 20: [DarkOliveGreen       0x556B2F]  [DarkOliveGreen       0x556B2F]  
+bucket 24: [YellowGreen          0x9ACD32]  [YellowGreen          0x9ACD32]  
+bucket 27: [SeaGreen             0x2E8B57]  [SeaGreen             0x2E8B57]  
+
+colors (after extract/insert operations):
+size: 28  bucket_count: 29  load_factor:  0.9655172
+
+bucket  1: [Tan                  0xD2B48C]  
+bucket  2: [BlueViolet           0x8A2BE2]  
+bucket  4: [AliceBlue            0xF0F8FF]  [AliceBlue            0xF0F8FF]  
+           [Gray                 0x808080]  
+bucket  6: [Cyan                 0x00FFFF]  [Cyan                 0x00FFFF]  
+bucket  8: [Maroon               0x800000]  [Maroon               0x800000]  
+           [Plum                 0xDDA0DD]  
+bucket 12: [LIGHTSALMON          0xFFA07A]  [LIGHTSALMON          0xFFA07A]  
+           [LIGHTSALMON          0xFFA07A]  [LIGHTSALMON          0xFFA07A]  
+           [MidnightBlue         0x191970]  [DarkOrchid           0x9932CC]  
+bucket 15: [LavenderBlush        0xFFF0F5]  [LavenderBlush        0xFFF0F5]  
+           [DimGray              0x696969]  [DimGray              0x696969]  
+           [OrangeRed            0xFF4500]  [OrangeRed            0xFF4500]  
+bucket 20: [DARKOLIVEGREEN       0x556B2F]  [DARKOLIVEGREEN       0x556B2F]  
+bucket 24: [YellowGreen          0x9ACD32]  [YellowGreen          0x9ACD32]  
+bucket 27: [SeaGreen             0x2E8B57]  [SeaGreen             0x2E8B57]  
+
+----- Results for example Ch08_03 -----
+
+----- Ch08_03_ex1() -----
+
+map1 (initial values):
+[ABQ,      Albuquerque International     ] [BOS,         Logan International        ] 
+[BWI, Baltimore/Washington International ] [CLT,   Charlotte Douglas International  ] 
+[DEN,        Denver International        ] [DFW,   Dallas Fort Worth International  ] 
+[DSM,      Des Moines International      ] [DTS,     Detroit Metro Wayne County     ] 
+
+map2 (initial values):
+[FAI,       Fairbanks International      ] [ITO,         Hilo International         ] 
+[LAX,      Los Angeles International     ] [LGA,              LaGuardia             ] 
+[MCO,        Orlando International       ] [ORD,        O'Hare International        ] 
+[PHX,  Phoenix Sky Harbor International  ] [SEA,    Seattle-Tacoma International    ] 
+
+map1 (after merge):
+<empty>
+
+map2 (after merge):
+[ABQ,      Albuquerque International     ] [BOS,         Logan International        ] 
+[BWI, Baltimore/Washington International ] [CLT,   Charlotte Douglas International  ] 
+[DEN,        Denver International        ] [DFW,   Dallas Fort Worth International  ] 
+[DSM,      Des Moines International      ] [DTS,     Detroit Metro Wayne County     ] 
+[FAI,       Fairbanks International      ] [ITO,         Hilo International         ] 
+[LAX,      Los Angeles International     ] [LGA,              LaGuardia             ] 
+[MCO,        Orlando International       ] [ORD,        O'Hare International        ] 
+[PHX,  Phoenix Sky Harbor International  ] [SEA,    Seattle-Tacoma International    ] 
+
+map2 (after insertions):
+[ABQ,      Albuquerque International     ] [BOS,         Logan International        ] 
+[BWI, Baltimore/Washington International ] [CLT,   Charlotte Douglas International  ] 
+[COD,        Yellowstone Regional        ] [DEN,        Denver International        ] 
+[DFW,   Dallas Fort Worth International  ] [DSM,      Des Moines International      ] 
+[DTS,     Detroit Metro Wayne County     ] [FAI,       Fairbanks International      ] 
+[ITO,         Hilo International         ] [LAX,      Los Angeles International     ] 
+[LGA,              LaGuardia             ] [MCO,        Orlando International       ] 
+[MHT,     Manchester-Boston Regional     ] [ORD,        O'Hare International        ] 
+[PHX,  Phoenix Sky Harbor International  ] [SEA,    Seattle-Tacoma International    ] 
+
+find keys in map2
+key: LAX - Los Angeles International
+key: PIT - not found
+key: COD - Yellowstone Regional
+key: CHS - not found
+
+num_erasures = 4
+
+map2 (after erasures):
+[ABQ,      Albuquerque International     ] [BOS,         Logan International        ] 
+[BWI, Baltimore/Washington International ] [CLT,   Charlotte Douglas International  ] 
+[COD,        Yellowstone Regional        ] [FAI,       Fairbanks International      ] 
+[ITO,         Hilo International         ] [LAX,      Los Angeles International     ] 
+[LGA,              LaGuardia             ] [MCO,        Orlando International       ] 
+[MHT,     Manchester-Boston Regional     ] [ORD,        O'Hare International        ] 
+[PHX,  Phoenix Sky Harbor International  ] [SEA,    Seattle-Tacoma International    ] 
+
+----- Ch08_03_ex2() -----
+
+map1 (initial values)
+size: 8 bucket_count: 29  load_factor:  0.27586207
+
+bucket  7: ABQ                          bucket  8: BWI BOS                      
+bucket  9: CLT                          bucket 10: DFW DEN DSM DTS              
+
+map2 (initial values)
+size: 8 bucket_count: 29  load_factor:  0.27586207
+
+bucket 12: FAI                          bucket 15: ITO                          
+bucket 18: LGA LAX                      bucket 19: MCO                          
+bucket 21: ORD                          bucket 22: PHX                          
+bucket 25: SEA                          
+
+map2 (after merge)
+size: 16 bucket_count: 29  load_factor:  0.55172414
+
+bucket  7: ABQ                          bucket  8: BOS BWI                      
+bucket  9: CLT                          bucket 10: DTS DSM DEN DFW              
+bucket 12: FAI                          bucket 15: ITO                          
+bucket 18: LGA LAX                      bucket 19: MCO                          
+bucket 21: ORD                          bucket 22: PHX                          
+bucket 25: SEA                          
+
+map2 == map3: true
+map2 != map3: false
+
+----- Ch08_03_ex3() -----
+
+map1 (after insert_range):
+[ABQ,      Albuquerque International     ] [BOS,         Logan International        ] 
+[BWI, Baltimore/Washington International ] [CLT,   Charlotte Douglas International  ] 
+[DEN,        Denver International        ] [DFW,   Dallas Fort Worth International  ] 
+[DSM,      Des Moines International      ] [DTS,     Detroit Metro Wayne County     ] 
+[FAI,       Fairbanks International      ] [ITO,         Hilo International         ] 
+[LAX,      Los Angeles International     ] [LGA,              LaGuardia             ] 
+[MCO,        Orlando International       ] [ORD,        O'Hare International        ] 
+[PHX,  Phoenix Sky Harbor International  ] [SEA,    Seattle-Tacoma International    ] 
+
+map1 (after replace_with_ranges):
+[ABQ,          Albuquerque Intl.         ] [BOS,             Logan Intl.            ] 
+[BWI,     Baltimore/Washington Intl.     ] [CLT,       Charlotte Douglas Intl.      ] 
+[DEN,            Denver Intl.            ] [DFW,       Dallas Fort Worth Intl.      ] 
+[DSM,          Des Moines Intl.          ] [DTS,     Detroit Metro Wayne County     ] 
+[FAI,           Fairbanks Intl.          ] [ITO,             Hilo Intl.             ] 
+[LAX,          Los Angeles Intl.         ] [LGA,              LaGuardia             ] 
+[MCO,            Orlando Intl.           ] [ORD,            O'Hare Intl.            ] 
+[PHX,      Phoenix Sky Harbor Intl.      ] [SEA,        Seattle-Tacoma Intl.        ] 
+
+----- Results for example Ch08_04 -----
+
+----- Ch08_04_ex1() -----
+
+airports (initial values):
+size: 24  bucket_count: 29  load_factor: 0.82758623
+
+bucket  2:
+  CN | PEK [  40.0725,  116.5975] Beijing                                 
+  CN | PVG [  31.1433,  121.8053] Shanghai                                
+bucket  4:
+  NO | BGO [  60.2936,    5.2181] Bergen                                  
+  NO | OSL [  60.2028,   11.0839] Oslo                                    
+bucket  5:
+  CA | YYC [  51.1225, -114.0133] Calgary                                 
+  CA | YYZ [  53.3100, -113.5794] Toronto                                 
+  CA | YVR [  49.1947, -123.1839] Vancouver                               
+bucket  7:
+  JP | KIX [  34.4306,  135.2303] Osaka                                   
+  JP | NRT [  35.7653,  140.3856] Tokyo                                   
+bucket 11:
+  US | ORD [  41.9786,  -87.9047] Chicago                                 
+  US | LAX [  33.9425, -118.4081] Los Angeles                             
+  US | JFK [  40.6397,  -74.0789] New York                                
+bucket 12:
+  CL | SCL [ -33.3928,  -70.7911] Santiago                                
+bucket 15:
+  GB | GLA [  55.8719,   -4.4331] Glasgow                                 
+  GB | LHR [  51.4775,   -0.4614] London                                  
+bucket 20:
+  SE | ARN [  59.5019,   17.9186] Stockholm                               
+bucket 23:
+  DE | BER [  52.3667,   13.5033] Berlin                                  
+  DE | MUN [  48.3539,   11.7861] Munich                                  
+  DE | FRA [  50.0333,    8.5706] Frankfurt                               
+bucket 24:
+  CH | ZRH [  47.4314,    8.5492] Zurich                                  
+bucket 27:
+  FR | CDG [  49.0097,    2.5478] Paris                                   
+  FR | TLS [  43.6350,    1.3678] Toulouse                                
+bucket 28:
+  AU | MEL [ -37.6733,  144.8433] Melbourne                               
+  AU | SYD [ -33.9461,  151.1772] Sydney                                  
+
+
+key_code: CH - match found
+  updating city name: ZURICH
+
+key_code: FR - match found
+  updating city name: PARIS
+  updating city name: TOULOUSE
+
+key_code: NL - match not found
+
+key_code: NO - match found
+  updating city name: BERGEN
+  updating city name: OSLO
+
+key_code: US - match found
+  updating city name: CHICAGO
+  updating city name: LOS ANGELES
+  updating city name: NEW YORK
+
+airports (after city name updates):
+size: 24  bucket_count: 29  load_factor: 0.82758623
+
+bucket  2:
+  CN | PEK [  40.0725,  116.5975] Beijing                                 
+  CN | PVG [  31.1433,  121.8053] Shanghai                                
+bucket  4:
+  NO | BGO [  60.2936,    5.2181] BERGEN                                  
+  NO | OSL [  60.2028,   11.0839] OSLO                                    
+bucket  5:
+  CA | YYC [  51.1225, -114.0133] Calgary                                 
+  CA | YYZ [  53.3100, -113.5794] Toronto                                 
+  CA | YVR [  49.1947, -123.1839] Vancouver                               
+bucket  7:
+  JP | KIX [  34.4306,  135.2303] Osaka                                   
+  JP | NRT [  35.7653,  140.3856] Tokyo                                   
+bucket 11:
+  US | ORD [  41.9786,  -87.9047] CHICAGO                                 
+  US | LAX [  33.9425, -118.4081] LOS ANGELES                             
+  US | JFK [  40.6397,  -74.0789] NEW YORK                                
+bucket 12:
+  CL | SCL [ -33.3928,  -70.7911] Santiago                                
+bucket 15:
+  GB | GLA [  55.8719,   -4.4331] Glasgow                                 
+  GB | LHR [  51.4775,   -0.4614] London                                  
+bucket 20:
+  SE | ARN [  59.5019,   17.9186] Stockholm                               
+bucket 23:
+  DE | BER [  52.3667,   13.5033] Berlin                                  
+  DE | MUN [  48.3539,   11.7861] Munich                                  
+  DE | FRA [  50.0333,    8.5706] Frankfurt                               
+bucket 24:
+  CH | ZRH [  47.4314,    8.5492] ZURICH                                  
+bucket 27:
+  FR | CDG [  49.0097,    2.5478] PARIS                                   
+  FR | TLS [  43.6350,    1.3678] TOULOUSE                                
+bucket 28:
+  AU | MEL [ -37.6733,  144.8433] Melbourne                               
+  AU | SYD [ -33.9461,  151.1772] Sydney                                  
+

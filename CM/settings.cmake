@@ -1,0 +1,41 @@
+# common settings
+set(CMAKE_CXX_STANDARD 23)
+set(CMAKE_CXX_EXTENSIONS off)
+set(COMMON_DIR "../../Common")
+
+# error checks
+if(PROJECT_SOURCE_DIR STREQUAL PROJECT_BINARY_DIR)
+    message(FATAL_ERROR "Project SOURCE_DIR and BINARY_DIR must be different")
+endif()
+
+# compiler-specfic switches
+if ((CMAKE_CXX_COMPILER_ID MATCHES "Clang") OR (CMAKE_CXX_COMPILER_ID STREQUAL "GNU"))
+    if (NOT "${CXX_FLAG}" STREQUAL "")
+        set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} ${CXX_FLAG}")
+    endif()
+    set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -Wall -Wextra")
+    set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -Wno-unused-parameter")
+    set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -Wno-unknown-pragmas")
+    set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -O3")
+    if (CMAKE_CXX_COMPILER_ID MATCHES "Clang")
+        set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -Wno-unused-private-field")
+    endif()
+elseif (CMAKE_CXX_COMPILER_ID STREQUAL "MSVC")
+    set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} /W3")
+endif()
+
+# status messages
+if ((CMAKE_CXX_COMPILER_ID MATCHES "Clang") OR (CMAKE_CXX_COMPILER_ID STREQUAL "GNU"))
+    if (NOT "${CMAKE_BUILD_TYPE}" STREQUAL "")
+        message (STATUS "Project '${PROJECT_NAME}' CMAKE_BUILD_TYPE: ${CMAKE_BUILD_TYPE}")
+    endif()
+    message(STATUS "PROJECT '${PROJECT_NAME}' CMAKE_CXX_FLAGS: ${CMAKE_CXX_FLAGS}")
+elseif (CMAKE_CXX_COMPILER_ID STREQUAL "MSVC")
+    if (CMAKE_SIZEOF_VOID_P EQUAL 8)
+        message(STATUS "Project '${PROJECT_NAME}' build platform is 64 bits")
+    elseif (CMAKE_SIZEOF_VOID_P EQUAL 4)
+        message(STATUS "Project '${PROJECT_NAME}' build platform is 32 bits")
+    else()
+        message(STATUS "Project '${PROJECT_NAME}' build platform is unknown")
+    endif()
+endif()

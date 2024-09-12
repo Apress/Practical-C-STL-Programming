@@ -1,0 +1,427 @@
+
+----- Results for example Ch07_01 -----
+
+----- Ch07_01_ex1() -----
+
+set1 (initial values):
+10  20  30  40  50  
+70  90  100  
+set1.size(): 8
+set1.insert(80) - status: true
+set1.insert(50) - status: false
+set1.insert(60) - status: true
+
+set1 (after insertions):
+10  20  30  40  50  
+60  70  80  90  100  
+set1.size(): 10
+
+set2 (initial values):
+Chicago  Houston  Los Angeles  New York  Philadelphia  
+Phoenix  San Antonio  San Diego  
+set2.size(): 8
+
+set2.emplace("Dallas") - status: true
+set2.emplace("Phoenix") - status: false
+set2.emplace("Austin") - status: true
+
+set2 (after emplacements):
+Austin  Chicago  Dallas  Houston  Los Angeles  
+New York  Philadelphia  Phoenix  San Antonio  San Diego  
+set2.size(): 10
+
+----- Ch07_01_ex2() -----
+
+set1 (initial values):
+Texas  Pennsylvania  Ohio  New York  Illinois  
+Florida  California  
+
+set1 (after insert):
+Texas  Pennsylvania  Ohio  North Carolina  New York  
+Michigan  Illinois  Georgia  Florida  California  
+
+set1 (after insert_range):
+Vermont  Texas  South Carolina  Pennsylvania  Ohio  
+North Carolina  New York  Michigan  Indiana  Illinois  
+Georgia  Florida  California  
+
+set1 (using iterators)
+Vermont
+Texas
+South Carolina
+Pennsylvania
+Ohio
+North Carolina
+New York
+Michigan
+Indiana
+Illinois
+Georgia
+Florida
+California
+
+----- Ch07_01_ex3() -----
+
+set1 (initial values):
+  100  200  300  400  500  600
+
+set2 (initial values):
+  100  150  200  400  500  600
+
+set3 (initial values):
+  100  200  300  400  500  600
+
+set4 (initial values):
+  100  200  300  450  500  600
+
+set1 == set2: false
+set1 != set2: true
+set1 <  set2: false
+set1 <= set2: false
+set1 >  set2: true
+set1 >= set2: true
+
+set1 == set3: true
+set1 <  set3: false
+set1 >  set3: false
+
+set1 == set4: false
+set1 <  set4: true
+set1 >  set4: false
+
+set5 (initial values):
+  500  400  300  200  100
+
+set6 (initial values):
+  600  400  300  200  100
+
+set7 (initial values):
+  500  400  300  200  100
+
+set5 == set6: false
+set5 <  set6: true
+set5 >  set6: false
+
+set5 == set7: true
+set5 <  set7: false
+set5 >  set7: false
+
+----- Ch07_01_ex4() -----
+
+set1 (initial values):
+Alaska  Delaware  Maine  Montana  North Dakota  
+Rhode Island  South Dakota  Vermont  Wyoming  
+
+set1.find("New Hampshire") - not found
+set1.find("Alaska") - removed
+set1.find("Hawaii") - not found
+set1.find("Maine") - removed
+
+set1 (after erase operations):
+Delaware  Montana  North Dakota  Rhode Island  South Dakota  
+Vermont  Wyoming  
+
+set1.contains("Kansas") - false
+set1.contains("South Dakota") - true
+set1.contains("Nebraska") - false
+
+----- Ch07_01_ex5() -----
+
+set1 (initial values):   0.3183  1.4142  2.7183  3.1416
+set2 (initial values):   1.4142  1.4427  1.6180  1.7321  3.1416
+
+set1 (after merge):   0.3183  1.4142  1.4427  1.6180  1.7321  2.7183  3.1416
+set2 (after merge):   1.4142  3.1416
+
+set1 (after clear): <empty>
+
+----- Results for example Ch07_02 -----
+
+----- Ch07_02_ex1() -----
+
+mset1 (initial values):
+    10    20    30    40    50    70    80    90   100
+mset1.size(): 9
+
+mset1 (after insertions):
+    10    20    30    40    50    60    70    80    80    90
+    90   100   110
+mset1.size(): 13
+
+mset1 (after insert_range):
+    10    20    30    30    40    40    50    60    70    70
+    80    80    80    80    90    90   100   110
+mset1.size(): 18
+
+mset1.count(80) = 4
+
+----- Ch07_02_ex2() -----
+
+mset1 (initial values):
+Seattle     Pittsburg   Miami       Denver      Denver      
+Dallas      Charlotte   Boise       Atlanta     Atlanta     
+mset1.size(): 10
+
+mset1 (after emplacements):
+Seattle     Portland    Pittsburg   Miami       Detroit     
+Denver      Denver      Dallas      Cleveland   Charlotte   
+Boise       Atlanta     Atlanta     Atlanta     
+mset1.size(): 14
+
+mset1 (after first erase):
+Seattle     Portland    Pittsburg   Miami       Detroit     
+Denver      Denver      Dallas      Cleveland   Charlotte   
+Boise       
+mset1.size(): 11
+
+mset1 (after erase loop):
+Seattle     Portland    Pittsburg   Miami       Cleveland   
+Charlotte   Boise       
+mset1.size(): 7
+
+----- Results for example Ch07_03 -----
+
+----- Ch07_03_ex1() -----
+
+map1 (initial values):
+[  0, zero  ] [  1, one   ] [  2, two   ] [  3, three ] [  4, four  ] 
+[  5, five  ] [  6, six   ] [  7, seven ] [  8, eight ] [  9, nine  ] 
+map1.size(): 10
+
+map1 (after modifications):
+[  0, null  ] [  1, eins  ] [  2, zwei  ] [  3, drei  ] [  4, four  ] 
+[  5, five  ] [  6, six   ] [  7, seven ] [  8, eight ] [  9, nine  ] 
+map1.size(): 10
+
+map1 (after insertions):
+[  0, null  ] [  1, eins  ] [  2, zwei  ] [  3, drei  ] [  4, four  ] 
+[  5, five  ] [  6, six   ] [  7, seven ] [  8, eight ] [  9, nine  ] 
+[ 10, zehn  ] [ 11, elf   ] 
+map1.size(): 12
+
+map1.at(2):  zwei
+map1.at(11): elf
+
+map1 (after erase operations):
+[  0, null  ] [  1, eins  ] [  2, zwei  ] [  3, drei  ] [  4, four  ] 
+[  7, seven ] [  8, eight ] [  9, nine  ] [ 10, zehn  ] [ 11, elf   ] 
+map1.size(): 10
+
+map1 (after clear):
+<empty>
+map1.size(): 0
+
+----- Ch07_03_ex2() -----
+
+map1 (initial values):
+[AKL, Auckland Airport (Auckland, New Zealand)] 
+[LHR, Heathrow Airport (London, England UK)] 
+[ORD, O'Hare International (Chicago, IL USA)] 
+[ZRH, Flughafen Zurich (Zurich, Switzerland)] 
+map1.size(): 4
+
+map1 (after SYD insert):
+[AKL, Auckland Airport (Auckland, New Zealand)] 
+[LHR, Heathrow Airport (London, England UK)] 
+[ORD, O'Hare International (Chicago, IL USA)] 
+[SYD, Sydney Airport (Syndey, Australia) ] 
+[ZRH, Flughafen Zurich (Zurich, Switzerland)] 
+map1.size(): 5
+
+map1.emplace - new element added to map1
+key = 'NRT' value: 'Narita International (Tokyo, Japan)'
+
+map1.try_emplace - new element added to map1
+key = 'DXB' value: 'Dubai International Airport (Dubai, UAE)'
+
+map1 (after emplacements):
+[AKL, Auckland Airport (Auckland, New Zealand)] 
+[DXB, Dubai International Airport (Dubai, UAE)] 
+[LHR, Heathrow Airport (London, England UK)] 
+[NRT, Narita International (Tokyo, Japan)] 
+[ORD, O'Hare International (Chicago, IL USA)] 
+[SYD, Sydney Airport (Syndey, Australia) ] 
+[ZRH, Flughafen Zurich (Zurich, Switzerland)] 
+map1.size(): 7
+
+key: 'ZRH' - found [ZRH, Flughafen Zurich (Zurich, Switzerland)]
+key: 'LAX' - not found
+key: 'MCO' - not found
+key: 'AKL' - found [AKL, Auckland Airport (Auckland, New Zealand)]
+
+----- Ch07_03_ex3() -----
+
+map colors1 (initial values):
+Blue       0x0000FF
+Cyan       0x00FFFF
+Green      0x008000
+Magenta    0xFF00FF
+Red        0xFF0000
+Yellow     0xFFFF00
+
+map colors2 (initial values):
+Blue       0x0000FF
+Cyan       0x00FFFF
+Green      0x008000
+Magenta    0xFF00FF
+Red        0xFF0000
+Yellow     0xFFFF00
+
+colors2 == colors1: true
+colors2 <  colors1: false
+colors2 >  colors1: false
+
+map colors2 (after emplace):
+Blue       0x0000FF
+Cyan       0x00FFFF
+Green      0x008000
+Lime       0x00FF00
+Magenta    0xFF00FF
+Red        0xFF0000
+Yellow     0xFFFF00
+
+colors2 == colors1: false
+colors2 <  colors1: true
+colors2 >  colors1: false
+
+map colors2 (initial insert_range):
+Black      0x000000
+Blue       0x0000FF
+Cyan       0x00FFFF
+Gray       0x808080
+Green      0x008000
+LightGray  0xD3D3D3
+Lime       0x00FF00
+Magenta    0xFF00FF
+Red        0xFF0000
+White      0xFFFFFF
+Yellow     0xFFFF00
+
+map colors3 (initial values):
+Yellow     0xFFFF00
+White      0xFFFFFF
+Red        0xFF0000
+Magenta    0xFF00FF
+Lime       0x00FF00
+LightGray  0xD3D3D3
+Green      0x008000
+Gray       0x808080
+Cyan       0x00FFFF
+Blue       0x0000FF
+Black      0x000000
+
+----- Ch07_03_ex4() -----
+
+map colors1 (initial values):
+Green      0x008000
+Maroon     0x800000
+Red        0xFF0000
+Yellow     0xFFFF00
+
+map colors2 (initial values):
+Yellow     0xFFFF00
+White      0xFFFFFF
+Teal       0x008080
+Red        0xFF0000
+Aqua       0x00FFFF
+
+map colors1 (after merge):
+Aqua       0x00FFFF
+Green      0x008000
+Maroon     0x800000
+Red        0xFF0000
+Teal       0x008080
+White      0xFFFFFF
+Yellow     0xFFFF00
+
+map colors2 (after merge):
+Yellow     0xFFFF00
+Red        0xFF0000
+
+----- Results for example Ch07_04 -----
+
+----- Ch07_04_ex1() -----
+
+mmap1 (initial values):
+[California     |    Los Angeles] [California     |  San Francisco] 
+[California     |         Fresno] [Illinois       |        Chicago] 
+[Illinois       |         Peoria] [Illinois       |       Rockford] 
+[Ohio           |      Cleveland] [Ohio           |       Columbus] 
+[Ohio           |     Cincinnati] [Texas          |        Houston] 
+[Texas          |         Dallas] [Texas          |         Austin] 
+[Texas          |        El Paso] 
+mmap1.size(): 13
+
+mmap1 (after insertions):
+[California     |    Los Angeles] [California     |  San Francisco] 
+[California     |         Fresno] [Florida        |        Orlando] 
+[Florida        |          Miami] [Florida        |   Jacksonville] 
+[Florida        |        Orlando] [Illinois       |        Chicago] 
+[Illinois       |         Peoria] [Illinois       |       Rockford] 
+[Ohio           |      Cleveland] [Ohio           |       Columbus] 
+[Ohio           |     Cincinnati] [Texas          |        Houston] 
+[Texas          |         Dallas] [Texas          |         Austin] 
+[Texas          |        El Paso] 
+mmap1.size(): 17
+
+mmap1 (after emplacements):
+[California     |    Los Angeles] [California     |  San Francisco] 
+[California     |         Fresno] [Florida        |        Orlando] 
+[Florida        |          Miami] [Florida        |   Jacksonville] 
+[Florida        |        Orlando] [Illinois       |        Chicago] 
+[Illinois       |         Peoria] [Illinois       |       Rockford] 
+[New York       |  New York City] [New York       |        Buffalo] 
+[New York       |         Albany] [New York       |        Yonkers] 
+[New York       |       Syracuse] [Ohio           |      Cleveland] 
+[Ohio           |       Columbus] [Ohio           |     Cincinnati] 
+[Texas          |        Houston] [Texas          |         Dallas] 
+[Texas          |         Austin] [Texas          |        El Paso] 
+mmap1.size(): 22
+
+number of Illinois cities in mmap1: 3
+number of Texas cities in mmap1: 4
+
+mmap1 contains key Ohio: true
+mmap1 contains key Wisconsin: false
+
+----- Ch07_04_ex2() -----
+
+mmap1 (initial values):
+[Brazil, Sao Paulo] [Brazil, Rio de Janeiro] [Brazil, Brasilia] 
+[Canada, Montreal] [Canada, Toronto] [Canada, Edmonton] 
+[Canada, Calgary] [Canada, Vancouver] [India, New Delhi] 
+[India, Chennai] [Mexico, Mexico City] [Mexico, Tijuana] 
+[Mexico, Ecatepec] 
+mmap1.size(): 13
+
+searching mmap1 using find()
+
+find_key: Argentina
+not found
+
+find_key: Canada
+found: Canada, Montreal
+found: Canada, Toronto
+found: Canada, Edmonton
+found: Canada, Calgary
+found: Canada, Vancouver
+
+find_key: India
+found: India, New Delhi
+found: India, Chennai
+
+searching mmap1 using equal_range()
+
+find_key: Argentina
+not found
+
+find_key: Canada
+found: Canada, Montreal
+found: Canada, Toronto
+found: Canada, Edmonton
+found: Canada, Calgary
+found: Canada, Vancouver
+
+find_key: India
+found: India, New Delhi
+found: India, Chennai

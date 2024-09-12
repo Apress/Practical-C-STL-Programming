@@ -1,0 +1,159 @@
+
+----- Results for example Ch09_01 -----
+
+----- Ch09_01_ex1() -----
+
+words1 (initial values) (size = 6)
+| and | years | ago | our | fathers | brought ... |
+
+words1 (after push and emplace) (size = 8)
+| four | score | and | years | ago | our | fathers | brought ... |
+
+words2 (initial values) (size = 3)
+| blueberry | banana cream | apple |
+
+words3 (initial values) (size = 3)
+| blueberry | banana cream | apple |
+
+words3 (after push operations) (size = 8)
+| turtle | pecan | peach | key lime | cherry | blueberry | banana cream | apple |
+
+----- Ch09_01_ex2() -----
+
+begin run1
+Start (num_discs: 20, num_moves: 1048575, target_peg: PegC)
+PegA: 1  2  3  4  5  6  7  8  9 10 11 12 13 14 15 16 17 18 19 20 
+PegB:
+PegC:
+
+Stop (num_discs: 20, num_moves: 1048575, target_peg: PegC)
+PegA:
+PegB:
+PegC: 1  2  3  4  5  6  7  8  9 10 11 12 13 14 15 16 17 18 19 20 
+
+
+begin run2
+Start (num_discs: 21, num_moves: 2097151, target_peg: PegB)
+PegA: 1  2  3  4  5  6  7  8  9 10 11 12 13 14 15 16 17 18 19 20 21 
+PegB:
+PegC:
+
+Stop (num_discs: 21, num_moves: 2097151, target_peg: PegB)
+PegA:
+PegB: 1  2  3  4  5  6  7  8  9 10 11 12 13 14 15 16 17 18 19 20 21 
+PegC:
+
+----- Results for example Ch09_02 -----
+
+----- Ch09_02_ex1() -----
+
+queue1 (initial values):
+  10  20  30  40
+
+queue1 (after insertions):
+  10  20  30  40  50  60
+
+queue1.front(): 10
+queue1.back():  60
+queue1.size():  6
+queue1.empty(): false
+
+queue1 (after pop operations):
+  30  40  50  60
+
+queue2 (initial values):
+  30  40  50  60
+
+queue1 == queue2: true
+queue1 != queue2: false
+queue1 <  queue2: false
+queue1 <= queue2: true
+queue1 >  queue2: false
+queue1 >= queue2: true
+
+----- Ch09_02_ex2() -----
+
+queue1 (initial values):
+apple               banana cream        blueberry           cherry              
+key lime            peach               pecan               turtle              
+
+queue2 (using push ops):
+pumpkin             raspberry           custard             coconut cream       
+lemon meringue      strawberry          
+
+queue1 (after swap):
+pumpkin             raspberry           custard             coconut cream       
+lemon meringue      strawberry          
+
+queue2 (after swap):
+apple               banana cream        blueberry           cherry              
+key lime            peach               pecan               turtle              
+
+----- Results for example Ch09_03 -----
+
+----- Ch09_03_ex1() -----
+Sides     Radius1     SideLen    Radius2     Perim     VerAng       Area
+==========================================================================
+
+polygons1 (initial values):
+[   4,     3.000 |     6.000,     4.243,    24.000,    90.000,    36.000]
+[   5,     2.000 |     2.906,     2.472,    14.531,   108.000,    14.531]
+[   3,     1.000 |     3.464,     2.000,    10.392,    60.000,     5.196]
+
+polygons1 (after push/emplace operations):
+[   4,     8.000 |    16.000,    11.314,    64.000,    90.000,   256.000]
+[   8,     5.000 |     4.142,     5.412,    33.137,   135.000,    82.843]
+[   6,     4.000 |     4.619,     4.619,    27.713,   120.000,    55.426]
+[   4,     3.000 |     6.000,     4.243,    24.000,    90.000,    36.000]
+[  10,     3.000 |     1.950,     3.154,    19.495,   144.000,    29.243]
+[   5,     2.000 |     2.906,     2.472,    14.531,   108.000,    14.531]
+[   3,     1.000 |     3.464,     2.000,    10.392,    60.000,     5.196]
+
+polygons1.size(): 7
+
+polygons1.top():
+[   4,     8.000 |    16.000,    11.314,    64.000,    90.000,   256.000]
+
+polygons1 (after pop operations):
+[   6,     4.000 |     4.619,     4.619,    27.713,   120.000,    55.426]
+[   4,     3.000 |     6.000,     4.243,    24.000,    90.000,    36.000]
+[  10,     3.000 |     1.950,     3.154,    19.495,   144.000,    29.243]
+[   5,     2.000 |     2.906,     2.472,    14.531,   108.000,    14.531]
+[   3,     1.000 |     3.464,     2.000,    10.392,    60.000,     5.196]
+
+polygons1.size(): 5
+
+polygons1.top():
+[   6,     4.000 |     4.619,     4.619,    27.713,   120.000,    55.426]
+
+----- Ch09_03_ex2() -----
+Sides     Radius1     SideLen    Radius2     Perim     VerAng       Area
+==========================================================================
+
+polygons1 (initial values):
+[   3,     1.000 |     3.464,     2.000,    10.392,    60.000,     5.196]
+[   5,     2.000 |     2.906,     2.472,    14.531,   108.000,    14.531]
+[   4,     3.000 |     6.000,     4.243,    24.000,    90.000,    36.000]
+[   6,     4.000 |     4.619,     4.619,    27.713,   120.000,    55.426]
+
+polygons1 (after emplace operations):
+[  12,     0.013 |     0.007,     0.013,     0.080,   150.000,     0.001]
+[  10,     0.250 |     0.162,     0.263,     1.625,   144.000,     0.203]
+[   3,     0.500 |     1.732,     1.000,     5.196,    60.000,     1.299]
+[   3,     1.000 |     3.464,     2.000,    10.392,    60.000,     5.196]
+[   5,     2.000 |     2.906,     2.472,    14.531,   108.000,    14.531]
+[   4,     3.000 |     6.000,     4.243,    24.000,    90.000,    36.000]
+[   6,     4.000 |     4.619,     4.619,    27.713,   120.000,    55.426]
+
+polygons1 (after pop operations):
+[   3,     0.500 |     1.732,     1.000,     5.196,    60.000,     1.299]
+[   3,     1.000 |     3.464,     2.000,    10.392,    60.000,     5.196]
+[   5,     2.000 |     2.906,     2.472,    14.531,   108.000,    14.531]
+[   4,     3.000 |     6.000,     4.243,    24.000,    90.000,    36.000]
+[   6,     4.000 |     4.619,     4.619,    27.713,   120.000,    55.426]
+
+----- Results for example Ch09_04 -----
+Ch09_04 requires cpp_lib_flat_set (C++23)
+
+----- Results for example Ch09_05 -----
+Ch09_05 requires cpp_lib_flat_map (C++23)

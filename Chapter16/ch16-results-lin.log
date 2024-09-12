@@ -1,0 +1,185 @@
+
+----- Results for example Ch16_01 -----
+
+----- Ch16_01_ex1() -----
+ra::num:   3 ra::den:   5
+rb::num:   1 rb::den:  15
+rc::num:  42 rc::den:   1
+
+rd_add::num:   2 rd_add::den:   3
+rd_sub::num:   8 rd_sub::den:  15
+rd_mul::num:   1 rd_mul::den:  25
+rd_div::num:   9 rd_div::den:   1
+
+ra == rb: false
+ra == rb: true
+ra <  rb: false
+ra <= rb: false
+ra >  rb: true
+ra >= rb: true
+
+----- Ch16_01_ex2() -----
+ra::num:    1                    ra::den:    1000                
+rb::num:    1                    rb::den:    1000000000          
+
+rc_add.num: 1000001              rc_add.den: 1000000000          
+rc_sub.num: 999999               rc_sub.den: 1000000000          
+rc_mul.num: 1                    rc_mul.den: 1000000000          
+rc_div.num: 1000000              rc_div.den: 1                   
+
+rd::num:    1000000000           rd::den:    1                   
+re::num:    1000000000000        re::den:    1                   
+
+rf_add.num: 1001000000           rf_add.den: 1                   
+rf_sub.num: 999999000000000      rf_sub.den: 1                   
+rf_mul.num: 1000000000000        rf_mul.den: 1                   
+rf_div.num: 1                    rf_div.den: 1000                
+
+----- Results for example Ch16_02 -----
+
+----- Ch16_02_ex1() -----
+num_days:    45d
+num_hours:   1080h
+
+num_hours_d:   30.75h
+num_minutes:   1845min
+
+----- Ch16_02_ex2() -----
+
+a_seconds:   496087s   a_minutes: 8268min 
+a_hours:     137h      a_days:    5d      
+a_err:       64087s  
+
+b_seconds:   560125s   b_minutes: 9335min 
+b_hours:     155h      b_days:    6d      
+b_err:       41725s  
+
+c_ns: 12345678901ns   c_us:  12345678us     
+c_ms: 12345ms         c_sec: 12s            
+
+c_sec (decimal): 12.345678901
+
+----- Ch16_02_ex3() -----
+ymd1 | ymd2 (initial values):   2025-06-21 | 2027-06-21
+
+ymd1 == ymd2: false    ymd1 != ymd2: true 
+ymd1 <  ymd2: true     ymd1 <= ymd2: true 
+ymd1 >  ymd2: false    ymd1 >= ymd2: false
+
+ymd3 | ymd4 (initial values):   2026-09-20 | 2028-03-19
+
+ymd1 | ymd2 (after arithmetic): 2025-12-21 | 2025-12-21
+
+ymd1 == ymd2: true     ymd1 != ymd2: false
+ymd1 <  ymd2: false    ymd1 <= ymd2: true 
+ymd1 >  ymd2: false    ymd1 >= ymd2: true 
+
+ymd5 | ymd6 (initial values):   2030-09-20 | 2027-03-19
+
+ymd7 | ymd8 (initial values):   2030-09-27 | 2027-02-19
+
+----- Results for example Ch16_03 -----
+
+----- Ch16_03_ex1() -----
+
+clk1 (chrono::system_clock) 
+type name: NSt6chrono3_V212system_clockE
+is_steady: false
+period:    St5ratioILl1ELl1000000000EE
+
+clk2 (chrono::utc_clock) 
+type name: NSt6chrono9utc_clockE
+is_steady: false
+period:    St5ratioILl1ELl1000000000EE
+
+clk3 (chrono::steady_clock) 
+type name: NSt6chrono3_V212steady_clockE
+is_steady: true
+period:    St5ratioILl1ELl1000000000EE
+
+clk4 (chrono::high_resolution_clock) 
+type name: NSt6chrono3_V212system_clockE
+is_steady: false
+period:    St5ratioILl1ELl1000000000EE
+
+----- Ch16_03_ex2() -----
+
+tp1_sys epoch: 1970-01-01 00:00:00 UTC
+
+tp1_utc epoch: 1970-01-01 00:00:00 UTC
+
+tp2_sys: 2024-06-01 20:30:04 UTC
+tp2_sys.time_since_epoch(): 1717273804806662774ns
+
+tp2_utc: 2024-06-01 20:30:04 UTC
+tp2_utc.time_since_epoch(): 1717273831806710746ns
+
+tp2_delta: 27.000047972
+
+tp2_sys: 2024-06-01 15:30:04 CDT
+
+tp3_diff:    500134716ns
+tp3_diff_ms: 500ms
+
+----- Ch16_03_ex3() -----
+
+tp (initial value):            2026-07-04 00:00:00.000000000
+tp (after date adjustments):   2030-12-10 03:42:18.000000000
+tp (after time adjustments):   2030-12-10 16:13:03.123456000
+
+----- Ch16_03_ex4() -----
+tp1: 2024-06-01 20:30:05.311010885
+tp2: 2024-06-01 20:30:05.611149171
+tp3: 2024-06-01 20:30:05.811283068
+
+tp1 == tp2: false  tp1 != tp2: true 
+tp1 <  tp2: true   tp1 <= tp2: true 
+tp1 >  tp2: false  tp1 >= tp2: false
+
+tp1 == tp2: false  tp1 != tp2: true 
+tp1 <  tp2: false  tp1 <= tp2: false
+tp1 >  tp2: true   tp1 >= tp2: true 
+
+----- Ch16_03_ex5() -----
+tp_now:   2024-06-01 20:30:05.811316068
+
+tp_cast:  2024-06-01 20:30:05.811
+
+tp_ceil:  2024-06-01 20:30:05.811317
+tp_floor: 2024-06-01 20:30:05.811316
+tp_round: 2024-06-01 20:30:05.811316
+
+----- Results for example Ch16_04 -----
+
+----- Ch16_04_ex1() -----
+now_sys:      2024-06-01 20:30:05 UTC
+
+other formatting examples using now_sys_zt
+now_sys_zt:   2024-06-01 15:30:05 CDT
+12 hour time: 2024-06-01 03:30:05 PM
+explicit YMD: 2024-06-01
+explicit MDY: 06/01/24
+locale:       Sat Jun  1 15:30:05 2024
+
+date and time using explicit zones
+America/New_York          2024-06-01 16:30:05 EDT
+Europe/Berlin             2024-06-01 22:30:05 CEST
+Asia/Kolkata              2024-06-02 02:00:05 IST
+Asia/Shanghai             2024-06-02 04:30:05 CST
+Asia/Tokyo                2024-06-02 05:30:05 JST
+America/Vancouver         2024-06-01 13:30:05 PDT
+
+----- Ch16_04_ex2() -----
+sys_days1:         2000-01-01 00:00:00 UTC
+sys_tse1:          946684800s
+utc_tse1:          946684822s
+num_leap_seconds1: 22s
+
+tp_now:            2024-06-01 20:30:05 UTC
+num_leap_seconds2: 27s
+
+----- Results for example Ch16_05 -----
+
+----- Ch16_05_ex1() -----
+example Ch16_05_ex1 is running, please wait ....................
+Benchmark times save to file Ch16_05_ex1_results.csv

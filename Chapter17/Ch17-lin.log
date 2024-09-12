@@ -1,0 +1,227 @@
+
+----- Results for example Ch17_01 -----
+
+----- Ch17_01_ex1() -----
+
+path1: /home/homer/SambaWin/CppSTL/SourceCode/Chapter17
+path1: /home/homer/SambaWin/CppSTL/SourceCode/Chapter17/test1.txt
+
+path2: /tmp
+path2: /tmp/test2.txt
+
+path3: /home/homer/SambaWin/CppSTL/SourceCode/Chapter17
+path3: /home/homer/SambaWin/CppSTL/SourceCode/Chapter17/Bad//Filename.txt
+
+ofs.good(): false (expecting false)
+
+----- Ch17_01_ex2() -----
+path1:               /home/homer/SambaWin/CppSTL/SourceCode/Chapter17/test1.txt
+path1_root_name:     
+path1_root_dir:      /
+path1_root_path:     /
+path1_relative_path: home/homer/SambaWin/CppSTL/SourceCode/Chapter17/test1.txt
+path1_parent_path:   /home/homer/SambaWin/CppSTL/SourceCode/Chapter17
+path1_filename:      test1.txt
+path1_stem:          test1
+path1_extension:     .txt
+
+----- Ch17_01_ex3() -----
+
+fs::exists(/home/homer/SambaWin/CppSTL/SourceCode/Chapter17/sub1)
+rc = false
+
+fs::create_directory(/home/homer/SambaWin/CppSTL/SourceCode/Chapter17/sub1)
+rc = true
+
+write_test_file(/home/homer/SambaWin/CppSTL/SourceCode/Chapter17/sub1/TestA.txt)
+rc = true
+
+fs::exists(/home/homer/SambaWin/CppSTL/SourceCode/Chapter17/sub1/TestA.txt)
+rc = true
+
+fs::remove(/home/homer/SambaWin/CppSTL/SourceCode/Chapter17/sub1/TestA.txt)
+rc = true
+
+fs::remove(/home/homer/SambaWin/CppSTL/SourceCode/Chapter17/sub1)
+rc = true
+
+----- Ch17_01_ex4() -----
+
+fs::exists(/tmp/d1/d2/d3/d4)
+rc = false
+
+fs::create_directories(/tmp/d1/d2/d3/d4)
+rc = true
+
+fn1.generic_string(): /tmp/d1/TestA.txt
+fn1.string():         /tmp/d1/TestA.txt
+rc:                   true
+
+fn2.generic_string(): /tmp/d1/d2/d3/d4/TestB.txt
+fn2.string():         /tmp/d1/d2/d3/d4/TestB.txt
+rc:                   true
+
+fs::remove_all(/tmp/d1)
+num_deletes = 6
+
+----- Results for example Ch17_02 -----
+
+----- Ch17_02_ex1() -----
+code_path: /home/homer/SambaWin/CppSTL/SourceCode
+fs::is_directory(/home/homer/SambaWin/CppSTL/SourceCode): true
+
+num_files:     10183
+num_files_cpp: 318
+num_files_h:   175
+
+----- Ch17_02_ex2() -----
+test_path: /tmp/Ch17_02_ex3
+old  1: [2024-05-24 14:11:50] /tmp/Ch17_02_ex3/D00/Ch17_02_ex3-00-02.txt
+old  2: [2024-05-24 14:11:50] /tmp/Ch17_02_ex3/D00/Ch17_02_ex3-00-00.txt
+old  3: [2024-05-24 14:11:50] /tmp/Ch17_02_ex3/D00/D01/Ch17_02_ex3-01-01.txt
+old  4: [2024-05-24 14:11:50] /tmp/Ch17_02_ex3/D00/D01/D02/Ch17_02_ex3-02-00.txt
+old  5: [2024-05-24 14:11:50] /tmp/Ch17_02_ex3/D00/D01/D02/Ch17_02_ex3-02-02.txt
+old  6: [2024-05-24 14:11:50] /tmp/Ch17_02_ex3/D00/D01/D02/Ch17_02_ex3-02-01.txt
+old  7: [2024-05-24 14:11:50] /tmp/Ch17_02_ex3/D00/D01/D02/D03/Ch17_02_ex3-03-01.txt
+old  8: [2024-05-24 14:11:50] /tmp/Ch17_02_ex3/D00/D01/D02/D03/Ch17_02_ex3-03-02.txt
+old  9: [2024-05-24 14:11:50] /tmp/Ch17_02_ex3/D00/D01/D02/D03/Ch17_02_ex3-03-00.txt
+old 10: [2024-05-24 14:11:50] /tmp/Ch17_02_ex3/D00/D01/Ch17_02_ex3-01-02.txt
+old 11: [2024-05-24 14:11:50] /tmp/Ch17_02_ex3/D00/D01/Ch17_02_ex3-01-00.txt
+old 12: [2024-05-24 14:11:50] /tmp/Ch17_02_ex3/D00/Ch17_02_ex3-00-01.txt
+
+num_directories: 20
+num_old_files:   12
+
+----- Results for example Ch17_03 -----
+
+----- Ch17_03_ex1() -----
+
+path1 information:
+raw string:     ../../test1.txt
+generic string: ../../test1.txt
+absolute:       /home/homer/SambaWin/CppSTL/SourceCode/Chapter17/../../test1.txt
+canonical:      /home/homer/SambaWin/CppSTL/test1.txt
+relative:       ../../test1.txt
+
+path2 information:
+raw string:     /home/homer/SambaWin/CppSTL/SourceCode/Chapter17/D0/D1/D2/test2.txt
+generic string: /home/homer/SambaWin/CppSTL/SourceCode/Chapter17/D0/D1/D2/test2.txt
+absolute:       /home/homer/SambaWin/CppSTL/SourceCode/Chapter17/D0/D1/D2/test2.txt
+canonical:      /home/homer/SambaWin/CppSTL/SourceCode/Chapter17/D0/D1/D2/test2.txt
+relative:       D0/D1/D2/test2.txt
+
+----- Ch17_03_ex2() -----
+
+test case #1 - dir: /tmp/good_dir_name
+#1 - created directory /tmp/good_dir_name
+#2 - directory /tmp/good_dir_name already exists
+
+test case #2 - dir: /tmp/good_dir_name
+#1 - directory /tmp/good_dir_name already exists
+#2 - directory /tmp/good_dir_name already exists
+
+test case #3 - dir: /tmp/bad//_dir_name
+ec.value:   2
+ec.message: No such file or directory
+
+caught fs::filesystem_error exception
+what():           filesystem error: cannot create directory: No such file or directory [/tmp/bad//_dir_name]
+path1():          /tmp/bad//_dir_name
+path2():          
+code().value():   2
+code().message(): No such file or directory
+
+----- Ch17_03_ex3() -----
+
+path: /tmp/Ch17_03_ex2
+| is_directory | 
+
+path: /tmp/Ch17_03_ex2/EmptyDir
+| is_directory | is_empty |
+
+path: /tmp/Ch17_03_ex2/test1-data-file.txt
+| is_regular_file | 
+
+path: /tmp/Ch17_03_ex2/test2-empty-file.txt
+| is_regular_file | is_empty |
+
+path: C:\
+| does not exist |
+
+path: C:\Windows\notepad.exe
+| does not exist |
+
+path: \\carbon2\projects
+| does not exist |
+
+path: /etc
+| is_directory | 
+
+path: /etc/fstab
+| is_regular_file | 
+
+path: /dev/sda
+| is_block_file | is_other | 
+
+path: /dev/tty0
+| is_character_file | is_other | 
+
+----- Results for example Ch17_04 -----
+
+----- Ch17_04_ex1() -----
+
+using fs::copy_file() - test #0
+source file:      /tmp/Ch17_04_ex1/TestFile1.txt
+destination file: /tmp/Ch17_04_ex1/TestFile2.txt
+status:           true
+ec.message():     Success
+
+using fs::copy_file() - test #1
+source file:      /tmp/Ch17_04_ex1/TestFile1.txt
+destination file: /tmp/Ch17_04_ex1/TestFile2.txt
+status:           false
+ec.message():     File exists
+
+using fs::copy_file() - test #2
+source file:      /tmp/Ch17_04_ex1/TestFile1.txt
+destination file: /tmp/Ch17_04_ex1/TestFile2.txt
+status:           true
+ec.message():     Success
+
+----- Ch17_04_ex2() -----
+
+display_path: /tmp/Ch17_04_ex2_S
+/tmp/Ch17_04_ex2_S/D00
+/tmp/Ch17_04_ex2_S/D00/Ch17_04_ex2-00-00.txt
+/tmp/Ch17_04_ex2_S/D00/D01
+/tmp/Ch17_04_ex2_S/D00/D01/Ch17_04_ex2-01-01.txt
+/tmp/Ch17_04_ex2_S/D00/D01/Ch17_04_ex2-01-02.txt
+/tmp/Ch17_04_ex2_S/D00/D01/D02
+/tmp/Ch17_04_ex2_S/D00/D01/D02/Ch17_04_ex2-02-01.txt
+/tmp/Ch17_04_ex2_S/D00/D01/D02/Ch17_04_ex2-02-00.txt
+/tmp/Ch17_04_ex2_S/D00/D01/D02/Ch17_04_ex2-02-02.txt
+/tmp/Ch17_04_ex2_S/D00/D01/D02/D03
+/tmp/Ch17_04_ex2_S/D00/D01/D02/D03/Ch17_04_ex2-03-01.txt
+/tmp/Ch17_04_ex2_S/D00/D01/D02/D03/Ch17_04_ex2-03-00.txt
+/tmp/Ch17_04_ex2_S/D00/D01/D02/D03/Ch17_04_ex2-03-02.txt
+/tmp/Ch17_04_ex2_S/D00/D01/Ch17_04_ex2-01-00.txt
+/tmp/Ch17_04_ex2_S/D00/Ch17_04_ex2-00-02.txt
+/tmp/Ch17_04_ex2_S/D00/Ch17_04_ex2-00-01.txt
+
+display_path: /tmp/Ch17_04_ex2_D
+/tmp/Ch17_04_ex2_D/D00
+/tmp/Ch17_04_ex2_D/D00/Ch17_04_ex2-00-00.txt
+/tmp/Ch17_04_ex2_D/D00/D01
+/tmp/Ch17_04_ex2_D/D00/D01/Ch17_04_ex2-01-01.txt
+/tmp/Ch17_04_ex2_D/D00/D01/Ch17_04_ex2-01-02.txt
+/tmp/Ch17_04_ex2_D/D00/D01/D02
+/tmp/Ch17_04_ex2_D/D00/D01/D02/Ch17_04_ex2-02-01.txt
+/tmp/Ch17_04_ex2_D/D00/D01/D02/Ch17_04_ex2-02-00.txt
+/tmp/Ch17_04_ex2_D/D00/D01/D02/Ch17_04_ex2-02-02.txt
+/tmp/Ch17_04_ex2_D/D00/D01/D02/D03
+/tmp/Ch17_04_ex2_D/D00/D01/D02/D03/Ch17_04_ex2-03-01.txt
+/tmp/Ch17_04_ex2_D/D00/D01/D02/D03/Ch17_04_ex2-03-00.txt
+/tmp/Ch17_04_ex2_D/D00/D01/D02/D03/Ch17_04_ex2-03-02.txt
+/tmp/Ch17_04_ex2_D/D00/D01/Ch17_04_ex2-01-00.txt
+/tmp/Ch17_04_ex2_D/D00/Ch17_04_ex2-00-02.txt
+/tmp/Ch17_04_ex2_D/D00/Ch17_04_ex2-00-01.txt

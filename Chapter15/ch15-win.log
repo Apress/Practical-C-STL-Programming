@@ -1,0 +1,489 @@
+
+----- Results for example Ch15_01 -----
+
+----- Ch15_01_ex1() -----
+Ala Arg Asn Asp Cys
+Gln Glu Gly His Ile
+Leu Lys Met Phe Pro
+Ser Thr Trp Tyr Val
+
+Alanine         Arginine        Asparagine      AsparticAcid    Cysteine       
+Glutamine       GlutamicAcid    Glycine         Histidine       IsoLeucine     
+Leucine         Lysine          Methionine      Phenylalanine   Proline        
+Serine          Threonine       Tryptophan      Tyrosine        Valine         
+
+
+----- Ch15_01_ex2() -----
+element 0 (amino acid code3)
+Ala Arg Asn Asp Cys
+Gln Glu Gly His Ile
+Leu Lys Met Phe Pro
+Ser Thr Trp Tyr Val
+
+element 1 (amino acid name)
+Alanine         Arginine        Asparagine      AsparticAcid    Cysteine       
+Glutamine       GlutamicAcid    Glycine         Histidine       IsoLeucine     
+Leucine         Lysine          Methionine      Phenylalanine   Proline        
+Serine          Threonine       Tryptophan      Tyrosine        Valine         
+
+element 2 (amino acid code1)
+A   R   N   D   C  
+Q   E   G   H   I  
+L   K   M   F   P  
+S   T   W   Y   V  
+
+element 3 (amino acid mol mass)
+  89.094  174.203  132.119  133.104  121.154
+ 146.146  147.131   75.067  155.156  131.175
+ 131.175  146.189  149.208  165.192  115.132
+ 105.093  119.119  204.228  181.191  117.148
+
+
+----- Results for example Ch15_02 -----
+
+----- Ch15_02_ex1() -----
+
+aa_vec:
+[Alanine         A|Ala| 89.094|NP][Arginine        R|Arg|174.203|B ]
+[Asparagine      N|Asn|132.119|UP][AsparticAcid    D|Asp|133.104|A ]
+[Cysteine        C|Cys|121.154|NP][Glutamine       Q|Gln|146.146|UP]
+[GlutamicAcid    E|Glu|147.131|A ][Glycine         G|Gly| 75.067|NP]
+[Histidine       H|His|155.156|B ][IsoLeucine      I|Ile|131.175|NP]
+[Leucine         L|Leu|131.175|NP][Lysine          K|Lys|146.189|B ]
+[Methionine      M|Met|149.208|NP][Phenylalanine   F|Phe|165.192|NP]
+[Proline         P|Pro|115.132|NP][Serine          S|Ser|105.093|UP]
+[Threonine       T|Thr|119.119|UP][Tryptophan      W|Trp|204.228|NP]
+[Tyrosine        Y|Tyr|181.191|UP][Valine          V|Val|117.148|NP]
+
+aa_enum (size = 20):
+key:  0: value: [Alanine         A|Ala| 89.094|NP]
+key:  1: value: [Arginine        R|Arg|174.203|B ]
+key:  2: value: [Asparagine      N|Asn|132.119|UP]
+key:  3: value: [AsparticAcid    D|Asp|133.104|A ]
+key:  4: value: [Cysteine        C|Cys|121.154|NP]
+key:  5: value: [Glutamine       Q|Gln|146.146|UP]
+key:  6: value: [GlutamicAcid    E|Glu|147.131|A ]
+key:  7: value: [Glycine         G|Gly| 75.067|NP]
+key:  8: value: [Histidine       H|His|155.156|B ]
+key:  9: value: [IsoLeucine      I|Ile|131.175|NP]
+key: 10: value: [Leucine         L|Leu|131.175|NP]
+key: 11: value: [Lysine          K|Lys|146.189|B ]
+key: 12: value: [Methionine      M|Met|149.208|NP]
+key: 13: value: [Phenylalanine   F|Phe|165.192|NP]
+key: 14: value: [Proline         P|Pro|115.132|NP]
+key: 15: value: [Serine          S|Ser|105.093|UP]
+key: 16: value: [Threonine       T|Thr|119.119|UP]
+key: 17: value: [Tryptophan      W|Trp|204.228|NP]
+key: 18: value: [Tyrosine        Y|Tyr|181.191|UP]
+key: 19: value: [Valine          V|Val|117.148|NP]
+
+aa_map (size = 20):
+key:  0: value: [Alanine         A|Ala| 89.094|NP]
+key:  1: value: [Arginine        R|Arg|174.203|B ]
+key:  2: value: [Asparagine      N|Asn|132.119|UP]
+key:  3: value: [AsparticAcid    D|Asp|133.104|A ]
+key:  4: value: [Cysteine        C|Cys|121.154|NP]
+key:  5: value: [Glutamine       Q|Gln|146.146|UP]
+key:  6: value: [GlutamicAcid    E|Glu|147.131|A ]
+key:  7: value: [Glycine         G|Gly| 75.067|NP]
+key:  8: value: [Histidine       H|His|155.156|B ]
+key:  9: value: [IsoLeucine      I|Ile|131.175|NP]
+key: 10: value: [Leucine         L|Leu|131.175|NP]
+key: 11: value: [Lysine          K|Lys|146.189|B ]
+key: 12: value: [Methionine      M|Met|149.208|NP]
+key: 13: value: [Phenylalanine   F|Phe|165.192|NP]
+key: 14: value: [Proline         P|Pro|115.132|NP]
+key: 15: value: [Serine          S|Ser|105.093|UP]
+key: 16: value: [Threonine       T|Thr|119.119|UP]
+key: 17: value: [Tryptophan      W|Trp|204.228|NP]
+key: 18: value: [Tyrosine        Y|Tyr|181.191|UP]
+key: 19: value: [Valine          V|Val|117.148|NP]
+
+----- Ch15_02_ex2() -----
+
+aa_vec:
+Ala Arg Asn Asp Cys Gln Glu Gly His Ile 
+Leu Lys Met Phe Pro Ser Thr Trp Tyr Val 
+
+adj_view1 (size = 18):
+[Ala Arg Asn]
+[Arg Asn Asp]
+[Asn Asp Cys]
+[Asp Cys Gln]
+[Cys Gln Glu]
+[Gln Glu Gly]
+[Glu Gly His]
+[Gly His Ile]
+[His Ile Leu]
+[Ile Leu Lys]
+[Leu Lys Met]
+[Lys Met Phe]
+[Met Phe Pro]
+[Phe Pro Ser]
+[Pro Ser Thr]
+[Ser Thr Trp]
+[Thr Trp Tyr]
+[Trp Tyr Val]
+
+adj_view2 (size = 17):
+[Ala|Arg|Asn|Asp]
+[Arg|Asn|Asp|Cys]
+[Asn|Asp|Cys|Gln]
+[Asp|Cys|Gln|Glu]
+[Cys|Gln|Glu|Gly]
+[Gln|Glu|Gly|His]
+[Glu|Gly|His|Ile]
+[Gly|His|Ile|Leu]
+[His|Ile|Leu|Lys]
+[Ile|Leu|Lys|Met]
+[Leu|Lys|Met|Phe]
+[Lys|Met|Phe|Pro]
+[Met|Phe|Pro|Ser]
+[Phe|Pro|Ser|Thr]
+[Pro|Ser|Thr|Trp]
+[Ser|Thr|Trp|Tyr]
+[Thr|Trp|Tyr|Val]
+
+----- Ch15_02_ex3() -----
+
+aa_vec_code1:
+A    R    N    D    C    Q    E    
+G    H    I    L    K    M    F    
+P    S    T    W    Y    V    
+
+aa_vec_code3:
+Ala  Arg  Asn  Asp  Cys  Gln  Glu  
+Gly  His  Ile  Leu  Lys  Met  Phe  
+Pro  Ser  Thr  Trp  Tyr  Val  
+
+aa_vec_mm:
+   89.094  174.203  132.119  133.104  121.154  146.146  147.131
+   75.067  155.156  131.175  131.175  146.189  149.208  165.192
+  115.132  105.093  119.119  204.228  181.191  117.148
+
+aa_zip_view:
+A      Ala       89.094
+R      Arg      174.203
+N      Asn      132.119
+D      Asp      133.104
+C      Cys      121.154
+Q      Gln      146.146
+E      Glu      147.131
+G      Gly       75.067
+H      His      155.156
+I      Ile      131.175
+L      Leu      131.175
+K      Lys      146.189
+M      Met      149.208
+F      Phe      165.192
+P      Pro      115.132
+S      Ser      105.093
+T      Thr      119.119
+W      Trp      204.228
+Y      Tyr      181.191
+V      Val      117.148
+
+----- Ch15_02_ex4() -----
+
+radii:
+      6.00      12.00      17.00      19.00       5.00      16.00 
+     14.00       3.00      12.00       4.00      15.00       2.00 
+
+heights:
+      2.00       7.00       5.00       1.00       6.00      17.00 
+     11.00       5.00      12.00       1.00      11.00       4.00 
+
+volumes1:
+    226.19    3166.73    4539.60    1134.11     471.24   13672.21 
+   6773.27     141.37    5428.67      50.27    7775.44      50.27 
+
+heights (after pop_back):
+      2.00       7.00       5.00       1.00       6.00      17.00 
+     11.00       5.00      12.00       1.00      11.00 
+
+volumes2:
+    226.19    3166.73    4539.60    1134.11     471.24   13672.21 
+   6773.27     141.37    5428.67      50.27    7775.44 
+
+----- Results for example Ch15_03 -----
+
+----- Ch15_03_ex1() -----
+
+vec1:
+ 914  606  211  775  557  832  441  634  842  581  848  655 
+
+vec2:
+ 291  645  100  224  250   77  397  971   73  668  218  161  991  744 
+
+vec3:
+ 824  705  893  267  889  139  459  566  152  574  598 
+
+view_join:
+ 914  606  211  775  557  832  441  634  842  581  848  655  291  645  100 
+ 224  250   77  397  971   73  668  218  161  991  744  824  705  893  267 
+ 889  139  459  566  152  574  598 
+
+----- Ch15_03_ex2() -----
+
+aa_vec1:
+Tyr Met Cys Ser Lys Thr His Met Thr Lys Thr Phe Asn Leu Lys 
+
+result #1: Tyr|Met|Cys|Ser|Lys|Thr|His|Met|Thr|Lys|Thr|Phe|Asn|Leu|Lys
+result #2: Tyr|Met|Cys|Ser|Lys|Thr|His|Met|Thr|Lys|Thr|Phe|Asn|Leu|Lys
+----- Ch15_03_ex3() -----
+
+test string:     "one, two, three, four"
+split string #0: "one"
+split string #1: "two"
+split string #2: "three"
+split string #3: "four"
+
+test string:     "eins, zwei, drei, vier"
+split string #0: "eins"
+split string #1: "zwei"
+split string #2: "drei"
+split string #3: "vier"
+
+test string:     ""
+
+test string:     "un, deux, trois, quatre"
+split string #0: "un"
+split string #1: "deux"
+split string #2: "trois"
+split string #3: "quatre"
+
+----- Ch15_03_ex4() -----
+[ 9 Thin     GreenPepper Caesar     ] [ 9 Thin     GreenPepper Garden     ] 
+[ 9 Thin     GreenPepper Spinach    ] [ 9 Thin     Mushroom    Caesar     ] 
+[ 9 Thin     Mushroom    Garden     ] [ 9 Thin     Mushroom    Spinach    ] 
+[ 9 Thin     Onion       Caesar     ] [ 9 Thin     Onion       Garden     ] 
+[ 9 Thin     Onion       Spinach    ] [ 9 Thin     Pepperoni   Caesar     ] 
+[ 9 Thin     Pepperoni   Garden     ] [ 9 Thin     Pepperoni   Spinach    ] 
+[ 9 Thin     Sausage     Caesar     ] [ 9 Thin     Sausage     Garden     ] 
+[ 9 Thin     Sausage     Spinach    ] [ 9 Thick    GreenPepper Caesar     ] 
+[ 9 Thick    GreenPepper Garden     ] [ 9 Thick    GreenPepper Spinach    ] 
+[ 9 Thick    Mushroom    Caesar     ] [ 9 Thick    Mushroom    Garden     ] 
+[ 9 Thick    Mushroom    Spinach    ] [ 9 Thick    Onion       Caesar     ] 
+[ 9 Thick    Onion       Garden     ] [ 9 Thick    Onion       Spinach    ] 
+[ 9 Thick    Pepperoni   Caesar     ] [ 9 Thick    Pepperoni   Garden     ] 
+[ 9 Thick    Pepperoni   Spinach    ] [ 9 Thick    Sausage     Caesar     ] 
+[ 9 Thick    Sausage     Garden     ] [ 9 Thick    Sausage     Spinach    ] 
+[ 9 DeepDish GreenPepper Caesar     ] [ 9 DeepDish GreenPepper Garden     ] 
+[ 9 DeepDish GreenPepper Spinach    ] [ 9 DeepDish Mushroom    Caesar     ] 
+[ 9 DeepDish Mushroom    Garden     ] [ 9 DeepDish Mushroom    Spinach    ] 
+[ 9 DeepDish Onion       Caesar     ] [ 9 DeepDish Onion       Garden     ] 
+[ 9 DeepDish Onion       Spinach    ] [ 9 DeepDish Pepperoni   Caesar     ] 
+[ 9 DeepDish Pepperoni   Garden     ] [ 9 DeepDish Pepperoni   Spinach    ] 
+[ 9 DeepDish Sausage     Caesar     ] [ 9 DeepDish Sausage     Garden     ] 
+[ 9 DeepDish Sausage     Spinach    ] [12 Thin     GreenPepper Caesar     ] 
+[12 Thin     GreenPepper Garden     ] [12 Thin     GreenPepper Spinach    ] 
+[12 Thin     Mushroom    Caesar     ] [12 Thin     Mushroom    Garden     ] 
+[12 Thin     Mushroom    Spinach    ] [12 Thin     Onion       Caesar     ] 
+[12 Thin     Onion       Garden     ] [12 Thin     Onion       Spinach    ] 
+[12 Thin     Pepperoni   Caesar     ] [12 Thin     Pepperoni   Garden     ] 
+[12 Thin     Pepperoni   Spinach    ] [12 Thin     Sausage     Caesar     ] 
+[12 Thin     Sausage     Garden     ] [12 Thin     Sausage     Spinach    ] 
+[12 Thick    GreenPepper Caesar     ] [12 Thick    GreenPepper Garden     ] 
+[12 Thick    GreenPepper Spinach    ] [12 Thick    Mushroom    Caesar     ] 
+[12 Thick    Mushroom    Garden     ] [12 Thick    Mushroom    Spinach    ] 
+[12 Thick    Onion       Caesar     ] [12 Thick    Onion       Garden     ] 
+[12 Thick    Onion       Spinach    ] [12 Thick    Pepperoni   Caesar     ] 
+[12 Thick    Pepperoni   Garden     ] [12 Thick    Pepperoni   Spinach    ] 
+[12 Thick    Sausage     Caesar     ] [12 Thick    Sausage     Garden     ] 
+[12 Thick    Sausage     Spinach    ] [12 DeepDish GreenPepper Caesar     ] 
+[12 DeepDish GreenPepper Garden     ] [12 DeepDish GreenPepper Spinach    ] 
+[12 DeepDish Mushroom    Caesar     ] [12 DeepDish Mushroom    Garden     ] 
+[12 DeepDish Mushroom    Spinach    ] [12 DeepDish Onion       Caesar     ] 
+[12 DeepDish Onion       Garden     ] [12 DeepDish Onion       Spinach    ] 
+[12 DeepDish Pepperoni   Caesar     ] [12 DeepDish Pepperoni   Garden     ] 
+[12 DeepDish Pepperoni   Spinach    ] [12 DeepDish Sausage     Caesar     ] 
+[12 DeepDish Sausage     Garden     ] [12 DeepDish Sausage     Spinach    ] 
+[15 Thin     GreenPepper Caesar     ] [15 Thin     GreenPepper Garden     ] 
+[15 Thin     GreenPepper Spinach    ] [15 Thin     Mushroom    Caesar     ] 
+[15 Thin     Mushroom    Garden     ] [15 Thin     Mushroom    Spinach    ] 
+[15 Thin     Onion       Caesar     ] [15 Thin     Onion       Garden     ] 
+[15 Thin     Onion       Spinach    ] [15 Thin     Pepperoni   Caesar     ] 
+[15 Thin     Pepperoni   Garden     ] [15 Thin     Pepperoni   Spinach    ] 
+[15 Thin     Sausage     Caesar     ] [15 Thin     Sausage     Garden     ] 
+[15 Thin     Sausage     Spinach    ] [15 Thick    GreenPepper Caesar     ] 
+[15 Thick    GreenPepper Garden     ] [15 Thick    GreenPepper Spinach    ] 
+[15 Thick    Mushroom    Caesar     ] [15 Thick    Mushroom    Garden     ] 
+[15 Thick    Mushroom    Spinach    ] [15 Thick    Onion       Caesar     ] 
+[15 Thick    Onion       Garden     ] [15 Thick    Onion       Spinach    ] 
+[15 Thick    Pepperoni   Caesar     ] [15 Thick    Pepperoni   Garden     ] 
+[15 Thick    Pepperoni   Spinach    ] [15 Thick    Sausage     Caesar     ] 
+[15 Thick    Sausage     Garden     ] [15 Thick    Sausage     Spinach    ] 
+[15 DeepDish GreenPepper Caesar     ] [15 DeepDish GreenPepper Garden     ] 
+[15 DeepDish GreenPepper Spinach    ] [15 DeepDish Mushroom    Caesar     ] 
+[15 DeepDish Mushroom    Garden     ] [15 DeepDish Mushroom    Spinach    ] 
+[15 DeepDish Onion       Caesar     ] [15 DeepDish Onion       Garden     ] 
+[15 DeepDish Onion       Spinach    ] [15 DeepDish Pepperoni   Caesar     ] 
+[15 DeepDish Pepperoni   Garden     ] [15 DeepDish Pepperoni   Spinach    ] 
+[15 DeepDish Sausage     Caesar     ] [15 DeepDish Sausage     Garden     ] 
+[15 DeepDish Sausage     Spinach    ] [18 Thin     GreenPepper Caesar     ] 
+[18 Thin     GreenPepper Garden     ] [18 Thin     GreenPepper Spinach    ] 
+[18 Thin     Mushroom    Caesar     ] [18 Thin     Mushroom    Garden     ] 
+[18 Thin     Mushroom    Spinach    ] [18 Thin     Onion       Caesar     ] 
+[18 Thin     Onion       Garden     ] [18 Thin     Onion       Spinach    ] 
+[18 Thin     Pepperoni   Caesar     ] [18 Thin     Pepperoni   Garden     ] 
+[18 Thin     Pepperoni   Spinach    ] [18 Thin     Sausage     Caesar     ] 
+[18 Thin     Sausage     Garden     ] [18 Thin     Sausage     Spinach    ] 
+[18 Thick    GreenPepper Caesar     ] [18 Thick    GreenPepper Garden     ] 
+[18 Thick    GreenPepper Spinach    ] [18 Thick    Mushroom    Caesar     ] 
+[18 Thick    Mushroom    Garden     ] [18 Thick    Mushroom    Spinach    ] 
+[18 Thick    Onion       Caesar     ] [18 Thick    Onion       Garden     ] 
+[18 Thick    Onion       Spinach    ] [18 Thick    Pepperoni   Caesar     ] 
+[18 Thick    Pepperoni   Garden     ] [18 Thick    Pepperoni   Spinach    ] 
+[18 Thick    Sausage     Caesar     ] [18 Thick    Sausage     Garden     ] 
+[18 Thick    Sausage     Spinach    ] [18 DeepDish GreenPepper Caesar     ] 
+[18 DeepDish GreenPepper Garden     ] [18 DeepDish GreenPepper Spinach    ] 
+[18 DeepDish Mushroom    Caesar     ] [18 DeepDish Mushroom    Garden     ] 
+[18 DeepDish Mushroom    Spinach    ] [18 DeepDish Onion       Caesar     ] 
+[18 DeepDish Onion       Garden     ] [18 DeepDish Onion       Spinach    ] 
+[18 DeepDish Pepperoni   Caesar     ] [18 DeepDish Pepperoni   Garden     ] 
+[18 DeepDish Pepperoni   Spinach    ] [18 DeepDish Sausage     Caesar     ] 
+[18 DeepDish Sausage     Garden     ] [18 DeepDish Sausage     Spinach    ] 
+
+----- Results for example Ch15_04 -----
+
+----- Ch15_04_ex1() -----
+
+vec1:
+23 12 37 21 15 20 
+
+window width: 1
+[  23] sum: 23 prod: 23
+[  12] sum: 12 prod: 12
+[  37] sum: 37 prod: 37
+[  21] sum: 21 prod: 21
+[  15] sum: 15 prod: 15
+[  20] sum: 20 prod: 20
+
+window width: 2
+[  23  12] sum: 35 prod: 276
+[  12  37] sum: 49 prod: 444
+[  37  21] sum: 58 prod: 777
+[  21  15] sum: 36 prod: 315
+[  15  20] sum: 35 prod: 300
+
+window width: 3
+[  23  12  37] sum: 72 prod: 10212
+[  12  37  21] sum: 70 prod: 9324
+[  37  21  15] sum: 73 prod: 11655
+[  21  15  20] sum: 56 prod: 6300
+
+window width: 4
+[  23  12  37  21] sum: 93 prod: 214452
+[  12  37  21  15] sum: 85 prod: 139860
+[  37  21  15  20] sum: 93 prod: 233100
+
+window width: 5
+[  23  12  37  21  15] sum: 108 prod: 3216780
+[  12  37  21  15  20] sum: 105 prod: 2797200
+
+window width: 6
+[  23  12  37  21  15  20] sum: 128 prod: 64335600
+
+----- Ch15_04_ex2() -----
+
+vec1:
+    23     12     37     21     15     20     24     17     36      7 
+    34     17      2      2     19     28     32     32     24     46 
+    26      7     37     24     14      3     18      3     42     32 
+    13      6     35      2     16      9     11     34      9     45 
+    12      6     16     25     49     37     23     23     21     44 
+
+stride1:
+    23     20     34     28     26      3     13      9     12     37 
+
+stride2:
+   529    400   1156    784    676      9    169     81    144   1369 
+
+----- Ch15_04_ex3() -----
+
+vec1:
+  23   12   37   21   15   20   24   17   36    7   34   17 
+
+chunk_w: 1
+[23 ] [12 ] [37 ] [21 ] [15 ] [20 ] [24 ] [17 ] [36 ] [7 ] [34 ] [17 ] 
+
+chunk_w: 2
+[23 12 ] [37 21 ] [15 20 ] [24 17 ] [36 7 ] [34 17 ] 
+
+chunk_w: 3
+[23 12 37 ] [21 15 20 ] [24 17 36 ] [7 34 17 ] 
+
+chunk_w: 4
+[23 12 37 21 ] [15 20 24 17 ] [36 7 34 17 ] 
+
+chunk_w: 5
+[23 12 37 21 15 ] [20 24 17 36 7 ] [34 17 ] 
+
+chunk_w: 6
+[23 12 37 21 15 20 ] [24 17 36 7 34 17 ] 
+
+chunk_w: 7
+[23 12 37 21 15 20 24 ] [17 36 7 34 17 ] 
+
+chunk_w: 8
+[23 12 37 21 15 20 24 17 ] [36 7 34 17 ] 
+
+chunk_w: 9
+[23 12 37 21 15 20 24 17 36 ] [7 34 17 ] 
+
+chunk_w: 10
+[23 12 37 21 15 20 24 17 36 7 ] [34 17 ] 
+
+chunk_w: 11
+[23 12 37 21 15 20 24 17 36 7 34 ] [17 ] 
+
+chunk_w: 12
+[23 12 37 21 15 20 24 17 36 7 34 17 ] 
+
+----- Ch15_04_ex4() -----
+
+vec1:
+   1    1    1    2    3    3    3    4    5    5    6    6    7    7    7 
+   8    9   10   10   10   11   11   11   11   11   12   13   13   14   16 
+  16   16   16   17   18   18   18   19   20   20 
+
+chunk_vw:
+[1 1 1 ] [2 ] [3 3 3 ] [4 ] 
+[5 5 ] [6 6 ] [7 7 7 ] [8 ] 
+[9 ] [10 10 10 ] [11 11 11 11 11 ] [12 ] 
+[13 13 ] [14 ] [16 16 16 16 ] [17 ] 
+[18 18 18 ] [19 ] [20 20 ] 
+----- Results for example Ch15_05 -----
+
+----- Ch15_05_ex1() -----
+
+begin test of std::views::iota, please wait
+
+pi (std::numbers::pi): 3.14159265358979
+
+calculating pi, n: 100
+pi (calculated):       3.13159290355855
+delta:                 9.999750e-03
+
+calculating pi, n: 1000
+pi (calculated):       3.14059265383979
+delta:                 9.999997e-04
+
+calculating pi, n: 1000000
+pi (calculated):       3.14159165358977
+delta:                 1.000000e-06
+
+calculating pi, n: 1000000000
+pi (calculated):       3.14159265258805
+delta:                 1.001743e-09
+
+----- Ch15_05_ex2() -----
+  42.0   42.0   42.0   42.0   42.0   42.0   42.0   42.0   42.0   42.0 
+ hello  hello  hello  hello  hello  hello  hello  hello  hello  hello 
+
+----- Ch15_05_ex3() -----
+result0: 36
+result1: 40320.0
+result2: |one|two|three|four|five|six|seven|eight|
+result0: 10
+result1: 24.0

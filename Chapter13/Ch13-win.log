@@ -1,0 +1,879 @@
+
+----- Results for example Ch13_01 -----
+
+----- Ch13_01_ex1() -----
+
+polygons1 (after sort)
+Sides     Radius1     SideLen    Radius2     Perim     VerAng       Area
+==========================================================================
+[  26,     4.889 |     1.187,     4.925,    30.871,   166.154,    75.467] 
+[  14,     8.839 |     4.035,     9.066,    56.485,   154.286,   249.623] 
+[  25,    10.007 |     2.528,    10.087,    63.209,   165.600,   316.269] 
+[  11,    15.380 |     9.032,    16.029,    99.351,   147.273,   763.999] 
+[   4,    15.380 |    30.760,    21.750,   123.039,    90.000,   946.167] 
+[  27,    18.916 |     4.422,    19.044,   119.390,   166.667,  1129.175] 
+[   8,    19.085 |    15.811,    20.658,   126.486,   135.000,  1207.015] 
+[  25,    19.954 |     5.041,    20.112,   126.036,   165.600,  1257.429] 
+[   8,    21.556 |    17.858,    23.332,   142.861,   135.000,  1539.771] 
+[  17,    22.378 |     8.366,    22.766,   142.228,   158.824,  1591.399] 
+
+polygons2 (after sort)
+Sides     Radius1     SideLen    Radius2     Perim     VerAng       Area
+==========================================================================
+[  23,     5.008 |     1.377,     5.055,    31.663,   164.348,    79.281] 
+[  15,     5.032 |     2.139,     5.145,    32.089,   156.000,    80.739] 
+[   9,    11.327 |     8.245,    12.054,    74.208,   140.000,   420.271] 
+[  14,    14.561 |     6.647,    14.935,    93.055,   154.286,   677.476] 
+[   5,    16.893 |    24.547,    20.881,   122.734,   108.000,  1036.665] 
+[  24,    19.651 |     5.174,    19.821,   124.182,   165.000,  1220.158] 
+
+polygons3 (after merge)
+Sides     Radius1     SideLen    Radius2     Perim     VerAng       Area
+==========================================================================
+[  26,     4.889 |     1.187,     4.925,    30.871,   166.154,    75.467] 
+[  23,     5.008 |     1.377,     5.055,    31.663,   164.348,    79.281] 
+[  15,     5.032 |     2.139,     5.145,    32.089,   156.000,    80.739] 
+[  14,     8.839 |     4.035,     9.066,    56.485,   154.286,   249.623] 
+[  25,    10.007 |     2.528,    10.087,    63.209,   165.600,   316.269] 
+[   9,    11.327 |     8.245,    12.054,    74.208,   140.000,   420.271] 
+[  14,    14.561 |     6.647,    14.935,    93.055,   154.286,   677.476] 
+[  11,    15.380 |     9.032,    16.029,    99.351,   147.273,   763.999] 
+[   4,    15.380 |    30.760,    21.750,   123.039,    90.000,   946.167] 
+[   5,    16.893 |    24.547,    20.881,   122.734,   108.000,  1036.665] 
+[  27,    18.916 |     4.422,    19.044,   119.390,   166.667,  1129.175] 
+[   8,    19.085 |    15.811,    20.658,   126.486,   135.000,  1207.015] 
+[  24,    19.651 |     5.174,    19.821,   124.182,   165.000,  1220.158] 
+[  25,    19.954 |     5.041,    20.112,   126.036,   165.600,  1257.429] 
+[   8,    21.556 |    17.858,    23.332,   142.861,   135.000,  1539.771] 
+[  17,    22.378 |     8.366,    22.766,   142.228,   158.824,  1591.399] 
+
+----- Ch13_01_ex2() -----
+
+polygons1 (after sort)
+Sides     Radius1     SideLen    Radius2     Perim     VerAng       Area
+==========================================================================
+[  24,    14.204 |     3.740,    14.326,    89.759,   165.000,   637.457] 
+[  20,    18.894 |     5.985,    19.130,   119.702,   162.000,  1130.839] 
+[  15,    20.464 |     8.699,    20.921,   130.491,   156.000,  1335.167] 
+[  14,     2.934 |     1.339,     3.009,    18.750,   154.286,    27.504] 
+[  14,     6.040 |     2.757,     6.195,    38.599,   154.286,   116.564] 
+[   8,     7.725 |     6.400,     8.362,    51.200,   135.000,   197.771] 
+[   5,     3.158 |     4.589,     3.904,    22.946,   108.000,    36.234] 
+[   5,     9.987 |    14.512,    12.344,    72.558,   108.000,   362.312] 
+[   4,    17.971 |    35.942,    25.415,   143.770,    90.000,  1291.860] 
+[   3,    15.518 |    53.757,    31.037,   161.271,    60.000,  1251.329] 
+
+polygons2 (after sort)
+Sides     Radius1     SideLen    Radius2     Perim     VerAng       Area
+==========================================================================
+[  24,    24.747 |     6.516,    24.961,   156.386,   165.000,  1935.069] 
+[  22,    17.263 |     4.964,    17.441,   109.212,   163.636,   942.681] 
+[  18,    18.111 |     6.387,    18.390,   114.965,   160.000,  1041.061] 
+[  17,    22.975 |     8.589,    23.373,   146.021,   158.824,  1677.405] 
+[  11,     6.822 |     4.006,     7.110,    44.070,   147.273,   150.325] 
+[  11,     5.521 |     3.242,     5.754,    35.664,   147.273,    98.448] 
+
+polygons1 (after move)
+Sides     Radius1     SideLen    Radius2     Perim     VerAng       Area
+==========================================================================
+[  24,    14.204 |     3.740,    14.326,    89.759,   165.000,   637.457] 
+[  20,    18.894 |     5.985,    19.130,   119.702,   162.000,  1130.839] 
+[  15,    20.464 |     8.699,    20.921,   130.491,   156.000,  1335.167] 
+[  14,     2.934 |     1.339,     3.009,    18.750,   154.286,    27.504] 
+[  14,     6.040 |     2.757,     6.195,    38.599,   154.286,   116.564] 
+[   8,     7.725 |     6.400,     8.362,    51.200,   135.000,   197.771] 
+[   5,     3.158 |     4.589,     3.904,    22.946,   108.000,    36.234] 
+[   5,     9.987 |    14.512,    12.344,    72.558,   108.000,   362.312] 
+[   4,    17.971 |    35.942,    25.415,   143.770,    90.000,  1291.860] 
+[   3,    15.518 |    53.757,    31.037,   161.271,    60.000,  1251.329] 
+[  24,    24.747 |     6.516,    24.961,   156.386,   165.000,  1935.069] 
+[  22,    17.263 |     4.964,    17.441,   109.212,   163.636,   942.681] 
+[  18,    18.111 |     6.387,    18.390,   114.965,   160.000,  1041.061] 
+[  17,    22.975 |     8.589,    23.373,   146.021,   158.824,  1677.405] 
+[  11,     6.822 |     4.006,     7.110,    44.070,   147.273,   150.325] 
+[  11,     5.521 |     3.242,     5.754,    35.664,   147.273,    98.448] 
+
+polygons1 (after inplace_merge)
+Sides     Radius1     SideLen    Radius2     Perim     VerAng       Area
+==========================================================================
+[  24,    14.204 |     3.740,    14.326,    89.759,   165.000,   637.457] 
+[  24,    24.747 |     6.516,    24.961,   156.386,   165.000,  1935.069] 
+[  22,    17.263 |     4.964,    17.441,   109.212,   163.636,   942.681] 
+[  20,    18.894 |     5.985,    19.130,   119.702,   162.000,  1130.839] 
+[  18,    18.111 |     6.387,    18.390,   114.965,   160.000,  1041.061] 
+[  17,    22.975 |     8.589,    23.373,   146.021,   158.824,  1677.405] 
+[  15,    20.464 |     8.699,    20.921,   130.491,   156.000,  1335.167] 
+[  14,     2.934 |     1.339,     3.009,    18.750,   154.286,    27.504] 
+[  14,     6.040 |     2.757,     6.195,    38.599,   154.286,   116.564] 
+[  11,     6.822 |     4.006,     7.110,    44.070,   147.273,   150.325] 
+[  11,     5.521 |     3.242,     5.754,    35.664,   147.273,    98.448] 
+[   8,     7.725 |     6.400,     8.362,    51.200,   135.000,   197.771] 
+[   5,     3.158 |     4.589,     3.904,    22.946,   108.000,    36.234] 
+[   5,     9.987 |    14.512,    12.344,    72.558,   108.000,   362.312] 
+[   4,    17.971 |    35.942,    25.415,   143.770,    90.000,  1291.860] 
+[   3,    15.518 |    53.757,    31.037,   161.271,    60.000,  1251.329] 
+
+----- Results for example Ch13_02 -----
+
+----- Ch13_02_ex1() -----
+
+vec1 (initial values):
+Ala Arg Asn Asp Cys Gln Glu Gly His Ile Leu Lys Met Phe Pro Ser Thr Trp Tyr Val 
+
+vec1 (after first shuffle):
+Ile Ala Met Thr Gly His Phe Val Tyr Pro Lys Trp Leu Arg Gln Cys Glu Asn Asp Ser 
+
+vec1 (after second shuffle):
+Thr Leu Tyr Lys Asp Val Gly Trp Ile Cys Gln His Arg Glu Phe Pro Ser Met Ala Asn 
+
+----- Ch13_02_ex2() -----
+
+vec1 (initial values):
+Ala Arg Asn Asp Cys Gln Glu Gly His Ile Leu Lys Met Phe Pro Ser Thr Trp Tyr Val 
+
+sample #0:
+Ala Glu Met Thr Trp 
+
+sample #1:
+Asp Cys Gln Glu Gly Ile Leu Phe Pro Thr 
+
+sample #2:
+Ala Arg Asn Asp Cys Gln Glu Gly Ile Leu Lys Met Phe Ser Val 
+
+----- Results for example Ch13_03 -----
+
+----- Ch13_03_ex1() -----
+
+vec1 (initial values)
+zero   one    two    three  four   five   six    seven  eight  nine   ten    
+
+vec1 (after std::ranges::rotate)
+two    three  four   five   six    seven  eight  nine   ten    zero   one    
+
+vec1 (after std::ranges::rotate_copy)
+two    three  four   five   six    seven  eight  nine   ten    zero   one    
+
+vec2 (after std::ranges::rotate_copy)
+five   six    seven  eight  nine   ten    zero   one    two    three  four   
+
+----- Ch13_03_ex2() -----
+
+list1 (initial values):
+zero   one    two    three  four   five   six    seven  eight  nine   ten    
+
+list1 (after rotate_left, n = 4):
+four   five   six    seven  eight  nine   ten    zero   one    two    three  
+
+result_l:
+zero   one    two    three  
+
+deq1 (initial values):
+zero   one    two    three  four   five   six    seven  eight  nine   ten    
+
+deq1 (after rotate_right, n = 4):
+seven  eight  nine   ten    zero   one    two    three  four   five   six    
+
+result_r:
+zero   one    two    three  four   five   six    
+
+----- Ch13_03_ex3() -----
+
+vec1 (initial values):
+zero   one    two    three  four   five   six    seven  eight  nine   ten    
+
+vec1 (after shift_left, 3):
+three  four   five   six    seven  eight  nine   ten    -----  -----  -----  
+
+vec2 (initial values):
+zero   one    two    three  four   five   six    seven  eight  nine   ten    
+
+vec2 (after shift_right, 3):
+-----  -----  -----  zero   one    two    three  four   five   six    seven  
+
+----- Results for example Ch13_04 -----
+
+----- Ch13_04_ex1() -----
+
+colors1:
+[AliceBlue            0xF0F8FF] [AntiqueWhite         0xFAEBD7] 
+[AntiqueWhite         0xFAEBD7] [AquaMarine           0x7FFFD4] 
+[Azure                0xF0FFFF] [Black                0x000000] 
+[Black                0x000000] [Black                0x000000] 
+[BlanchedAlmond       0xFFEBCD] [BlanchedAlmond       0xFFEBCD] 
+[Blue                 0x0000FF] [BlueViolet           0x8A2BE2] 
+[Brown                0xA52A2A] [Burlywood            0xDEB887] 
+[Burlywood            0xDEB887] [CadetBlue            0x5F9EA0] 
+[Chartreuse           0x7FFF00] 
+
+colors2:
+[AntiqueWhite         0xFAEBD7] [AntiqueWhite         0xFAEBD7] 
+[AntiqueWhite         0xFAEBD7] [Azure                0xF0FFFF] 
+[Beige                0xF5F5DC] [Bisque               0xFFE4C4] 
+[BlanchedAlmond       0xFFEBCD] [Blue                 0x0000FF] 
+[BlueViolet           0x8A2BE2] [BlueViolet           0x8A2BE2] 
+[Brown                0xA52A2A] [Burlywood            0xDEB887] 
+[CadetBlue            0x5F9EA0] [Coral                0xFF7F50] 
+[Coral                0xFF7F50] 
+
+colors3 (intersection):
+[AntiqueWhite         0xFAEBD7] [AntiqueWhite         0xFAEBD7] 
+[Azure                0xF0FFFF] [BlanchedAlmond       0xFFEBCD] 
+[Blue                 0x0000FF] [BlueViolet           0x8A2BE2] 
+[Brown                0xA52A2A] [Burlywood            0xDEB887] 
+[CadetBlue            0x5F9EA0] 
+
+colors4 (union):
+[AliceBlue            0xF0F8FF] [AntiqueWhite         0xFAEBD7] 
+[AntiqueWhite         0xFAEBD7] [AntiqueWhite         0xFAEBD7] 
+[AquaMarine           0x7FFFD4] [Azure                0xF0FFFF] 
+[Beige                0xF5F5DC] [Bisque               0xFFE4C4] 
+[Black                0x000000] [Black                0x000000] 
+[Black                0x000000] [BlanchedAlmond       0xFFEBCD] 
+[BlanchedAlmond       0xFFEBCD] [Blue                 0x0000FF] 
+[BlueViolet           0x8A2BE2] [BlueViolet           0x8A2BE2] 
+[Brown                0xA52A2A] [Burlywood            0xDEB887] 
+[Burlywood            0xDEB887] [CadetBlue            0x5F9EA0] 
+[Chartreuse           0x7FFF00] [Coral                0xFF7F50] 
+[Coral                0xFF7F50] 
+
+colors5 (difference):
+[AliceBlue            0xF0F8FF] [AquaMarine           0x7FFFD4] 
+[Black                0x000000] [Black                0x000000] 
+[Black                0x000000] [BlanchedAlmond       0xFFEBCD] 
+[Burlywood            0xDEB887] [Chartreuse           0x7FFF00] 
+
+colors6 (symmetric_difference):
+[AliceBlue            0xF0F8FF] [AntiqueWhite         0xFAEBD7] 
+[AquaMarine           0x7FFFD4] [Beige                0xF5F5DC] 
+[Bisque               0xFFE4C4] [Black                0x000000] 
+[Black                0x000000] [Black                0x000000] 
+[BlanchedAlmond       0xFFEBCD] [BlueViolet           0x8A2BE2] 
+[Burlywood            0xDEB887] [Chartreuse           0x7FFF00] 
+[Coral                0xFF7F50] [Coral                0xFF7F50] 
+
+----- Results for example Ch13_05 -----
+
+----- Ch13_05_ex1() -----
+
+iteration 1:
+[Cyan                 0x00FFFF] [DimGray              0x696969] 
+[LavenderBlush        0xFFF0F5] [Maroon               0x800000] 
+[OrangeRed            0xFF4500] 
+
+iteration 2:
+[Cyan                 0x00FFFF] [DimGray              0x696969] 
+[LavenderBlush        0xFFF0F5] [OrangeRed            0xFF4500] 
+[Maroon               0x800000] 
+
+iteration 3:
+[Cyan                 0x00FFFF] [DimGray              0x696969] 
+[Maroon               0x800000] [LavenderBlush        0xFFF0F5] 
+[OrangeRed            0xFF4500] 
+
+iteration 4:
+[Cyan                 0x00FFFF] [DimGray              0x696969] 
+[Maroon               0x800000] [OrangeRed            0xFF4500] 
+[LavenderBlush        0xFFF0F5] 
+
+iteration 5:
+[Cyan                 0x00FFFF] [DimGray              0x696969] 
+[OrangeRed            0xFF4500] [LavenderBlush        0xFFF0F5] 
+[Maroon               0x800000] 
+
+iteration 6:
+[Cyan                 0x00FFFF] [DimGray              0x696969] 
+[OrangeRed            0xFF4500] [Maroon               0x800000] 
+[LavenderBlush        0xFFF0F5] 
+
+iteration 7:
+[Cyan                 0x00FFFF] [LavenderBlush        0xFFF0F5] 
+[DimGray              0x696969] [Maroon               0x800000] 
+[OrangeRed            0xFF4500] 
+
+iteration 8:
+[Cyan                 0x00FFFF] [LavenderBlush        0xFFF0F5] 
+[DimGray              0x696969] [OrangeRed            0xFF4500] 
+[Maroon               0x800000] 
+
+iteration 9:
+[Cyan                 0x00FFFF] [LavenderBlush        0xFFF0F5] 
+[Maroon               0x800000] [DimGray              0x696969] 
+[OrangeRed            0xFF4500] 
+
+iteration 10:
+[Cyan                 0x00FFFF] [LavenderBlush        0xFFF0F5] 
+[Maroon               0x800000] [OrangeRed            0xFF4500] 
+[DimGray              0x696969] 
+
+iteration 11:
+[Cyan                 0x00FFFF] [LavenderBlush        0xFFF0F5] 
+[OrangeRed            0xFF4500] [DimGray              0x696969] 
+[Maroon               0x800000] 
+
+iteration 12:
+[Cyan                 0x00FFFF] [LavenderBlush        0xFFF0F5] 
+[OrangeRed            0xFF4500] [Maroon               0x800000] 
+[DimGray              0x696969] 
+
+iteration 13:
+[Cyan                 0x00FFFF] [Maroon               0x800000] 
+[DimGray              0x696969] [LavenderBlush        0xFFF0F5] 
+[OrangeRed            0xFF4500] 
+
+iteration 14:
+[Cyan                 0x00FFFF] [Maroon               0x800000] 
+[DimGray              0x696969] [OrangeRed            0xFF4500] 
+[LavenderBlush        0xFFF0F5] 
+
+iteration 15:
+[Cyan                 0x00FFFF] [Maroon               0x800000] 
+[LavenderBlush        0xFFF0F5] [DimGray              0x696969] 
+[OrangeRed            0xFF4500] 
+
+iteration 16:
+[Cyan                 0x00FFFF] [Maroon               0x800000] 
+[LavenderBlush        0xFFF0F5] [OrangeRed            0xFF4500] 
+[DimGray              0x696969] 
+
+iteration 17:
+[Cyan                 0x00FFFF] [Maroon               0x800000] 
+[OrangeRed            0xFF4500] [DimGray              0x696969] 
+[LavenderBlush        0xFFF0F5] 
+
+iteration 18:
+[Cyan                 0x00FFFF] [Maroon               0x800000] 
+[OrangeRed            0xFF4500] [LavenderBlush        0xFFF0F5] 
+[DimGray              0x696969] 
+
+iteration 19:
+[Cyan                 0x00FFFF] [OrangeRed            0xFF4500] 
+[DimGray              0x696969] [LavenderBlush        0xFFF0F5] 
+[Maroon               0x800000] 
+
+iteration 20:
+[Cyan                 0x00FFFF] [OrangeRed            0xFF4500] 
+[DimGray              0x696969] [Maroon               0x800000] 
+[LavenderBlush        0xFFF0F5] 
+
+iteration 21:
+[Cyan                 0x00FFFF] [OrangeRed            0xFF4500] 
+[LavenderBlush        0xFFF0F5] [DimGray              0x696969] 
+[Maroon               0x800000] 
+
+iteration 22:
+[Cyan                 0x00FFFF] [OrangeRed            0xFF4500] 
+[LavenderBlush        0xFFF0F5] [Maroon               0x800000] 
+[DimGray              0x696969] 
+
+iteration 23:
+[Cyan                 0x00FFFF] [OrangeRed            0xFF4500] 
+[Maroon               0x800000] [DimGray              0x696969] 
+[LavenderBlush        0xFFF0F5] 
+
+iteration 24:
+[Cyan                 0x00FFFF] [OrangeRed            0xFF4500] 
+[Maroon               0x800000] [LavenderBlush        0xFFF0F5] 
+[DimGray              0x696969] 
+
+iteration 25:
+[DimGray              0x696969] [Cyan                 0x00FFFF] 
+[LavenderBlush        0xFFF0F5] [Maroon               0x800000] 
+[OrangeRed            0xFF4500] 
+
+iteration 26:
+[DimGray              0x696969] [Cyan                 0x00FFFF] 
+[LavenderBlush        0xFFF0F5] [OrangeRed            0xFF4500] 
+[Maroon               0x800000] 
+
+iteration 27:
+[DimGray              0x696969] [Cyan                 0x00FFFF] 
+[Maroon               0x800000] [LavenderBlush        0xFFF0F5] 
+[OrangeRed            0xFF4500] 
+
+iteration 28:
+[DimGray              0x696969] [Cyan                 0x00FFFF] 
+[Maroon               0x800000] [OrangeRed            0xFF4500] 
+[LavenderBlush        0xFFF0F5] 
+
+iteration 29:
+[DimGray              0x696969] [Cyan                 0x00FFFF] 
+[OrangeRed            0xFF4500] [LavenderBlush        0xFFF0F5] 
+[Maroon               0x800000] 
+
+iteration 30:
+[DimGray              0x696969] [Cyan                 0x00FFFF] 
+[OrangeRed            0xFF4500] [Maroon               0x800000] 
+[LavenderBlush        0xFFF0F5] 
+
+iteration 31:
+[DimGray              0x696969] [LavenderBlush        0xFFF0F5] 
+[Cyan                 0x00FFFF] [Maroon               0x800000] 
+[OrangeRed            0xFF4500] 
+
+iteration 32:
+[DimGray              0x696969] [LavenderBlush        0xFFF0F5] 
+[Cyan                 0x00FFFF] [OrangeRed            0xFF4500] 
+[Maroon               0x800000] 
+
+iteration 33:
+[DimGray              0x696969] [LavenderBlush        0xFFF0F5] 
+[Maroon               0x800000] [Cyan                 0x00FFFF] 
+[OrangeRed            0xFF4500] 
+
+iteration 34:
+[DimGray              0x696969] [LavenderBlush        0xFFF0F5] 
+[Maroon               0x800000] [OrangeRed            0xFF4500] 
+[Cyan                 0x00FFFF] 
+
+iteration 35:
+[DimGray              0x696969] [LavenderBlush        0xFFF0F5] 
+[OrangeRed            0xFF4500] [Cyan                 0x00FFFF] 
+[Maroon               0x800000] 
+
+iteration 36:
+[DimGray              0x696969] [LavenderBlush        0xFFF0F5] 
+[OrangeRed            0xFF4500] [Maroon               0x800000] 
+[Cyan                 0x00FFFF] 
+
+iteration 37:
+[DimGray              0x696969] [Maroon               0x800000] 
+[Cyan                 0x00FFFF] [LavenderBlush        0xFFF0F5] 
+[OrangeRed            0xFF4500] 
+
+iteration 38:
+[DimGray              0x696969] [Maroon               0x800000] 
+[Cyan                 0x00FFFF] [OrangeRed            0xFF4500] 
+[LavenderBlush        0xFFF0F5] 
+
+iteration 39:
+[DimGray              0x696969] [Maroon               0x800000] 
+[LavenderBlush        0xFFF0F5] [Cyan                 0x00FFFF] 
+[OrangeRed            0xFF4500] 
+
+iteration 40:
+[DimGray              0x696969] [Maroon               0x800000] 
+[LavenderBlush        0xFFF0F5] [OrangeRed            0xFF4500] 
+[Cyan                 0x00FFFF] 
+
+iteration 41:
+[DimGray              0x696969] [Maroon               0x800000] 
+[OrangeRed            0xFF4500] [Cyan                 0x00FFFF] 
+[LavenderBlush        0xFFF0F5] 
+
+iteration 42:
+[DimGray              0x696969] [Maroon               0x800000] 
+[OrangeRed            0xFF4500] [LavenderBlush        0xFFF0F5] 
+[Cyan                 0x00FFFF] 
+
+iteration 43:
+[DimGray              0x696969] [OrangeRed            0xFF4500] 
+[Cyan                 0x00FFFF] [LavenderBlush        0xFFF0F5] 
+[Maroon               0x800000] 
+
+iteration 44:
+[DimGray              0x696969] [OrangeRed            0xFF4500] 
+[Cyan                 0x00FFFF] [Maroon               0x800000] 
+[LavenderBlush        0xFFF0F5] 
+
+iteration 45:
+[DimGray              0x696969] [OrangeRed            0xFF4500] 
+[LavenderBlush        0xFFF0F5] [Cyan                 0x00FFFF] 
+[Maroon               0x800000] 
+
+iteration 46:
+[DimGray              0x696969] [OrangeRed            0xFF4500] 
+[LavenderBlush        0xFFF0F5] [Maroon               0x800000] 
+[Cyan                 0x00FFFF] 
+
+iteration 47:
+[DimGray              0x696969] [OrangeRed            0xFF4500] 
+[Maroon               0x800000] [Cyan                 0x00FFFF] 
+[LavenderBlush        0xFFF0F5] 
+
+iteration 48:
+[DimGray              0x696969] [OrangeRed            0xFF4500] 
+[Maroon               0x800000] [LavenderBlush        0xFFF0F5] 
+[Cyan                 0x00FFFF] 
+
+iteration 49:
+[LavenderBlush        0xFFF0F5] [Cyan                 0x00FFFF] 
+[DimGray              0x696969] [Maroon               0x800000] 
+[OrangeRed            0xFF4500] 
+
+iteration 50:
+[LavenderBlush        0xFFF0F5] [Cyan                 0x00FFFF] 
+[DimGray              0x696969] [OrangeRed            0xFF4500] 
+[Maroon               0x800000] 
+
+iteration 51:
+[LavenderBlush        0xFFF0F5] [Cyan                 0x00FFFF] 
+[Maroon               0x800000] [DimGray              0x696969] 
+[OrangeRed            0xFF4500] 
+
+iteration 52:
+[LavenderBlush        0xFFF0F5] [Cyan                 0x00FFFF] 
+[Maroon               0x800000] [OrangeRed            0xFF4500] 
+[DimGray              0x696969] 
+
+iteration 53:
+[LavenderBlush        0xFFF0F5] [Cyan                 0x00FFFF] 
+[OrangeRed            0xFF4500] [DimGray              0x696969] 
+[Maroon               0x800000] 
+
+iteration 54:
+[LavenderBlush        0xFFF0F5] [Cyan                 0x00FFFF] 
+[OrangeRed            0xFF4500] [Maroon               0x800000] 
+[DimGray              0x696969] 
+
+iteration 55:
+[LavenderBlush        0xFFF0F5] [DimGray              0x696969] 
+[Cyan                 0x00FFFF] [Maroon               0x800000] 
+[OrangeRed            0xFF4500] 
+
+iteration 56:
+[LavenderBlush        0xFFF0F5] [DimGray              0x696969] 
+[Cyan                 0x00FFFF] [OrangeRed            0xFF4500] 
+[Maroon               0x800000] 
+
+iteration 57:
+[LavenderBlush        0xFFF0F5] [DimGray              0x696969] 
+[Maroon               0x800000] [Cyan                 0x00FFFF] 
+[OrangeRed            0xFF4500] 
+
+iteration 58:
+[LavenderBlush        0xFFF0F5] [DimGray              0x696969] 
+[Maroon               0x800000] [OrangeRed            0xFF4500] 
+[Cyan                 0x00FFFF] 
+
+iteration 59:
+[LavenderBlush        0xFFF0F5] [DimGray              0x696969] 
+[OrangeRed            0xFF4500] [Cyan                 0x00FFFF] 
+[Maroon               0x800000] 
+
+iteration 60:
+[LavenderBlush        0xFFF0F5] [DimGray              0x696969] 
+[OrangeRed            0xFF4500] [Maroon               0x800000] 
+[Cyan                 0x00FFFF] 
+
+iteration 61:
+[LavenderBlush        0xFFF0F5] [Maroon               0x800000] 
+[Cyan                 0x00FFFF] [DimGray              0x696969] 
+[OrangeRed            0xFF4500] 
+
+iteration 62:
+[LavenderBlush        0xFFF0F5] [Maroon               0x800000] 
+[Cyan                 0x00FFFF] [OrangeRed            0xFF4500] 
+[DimGray              0x696969] 
+
+iteration 63:
+[LavenderBlush        0xFFF0F5] [Maroon               0x800000] 
+[DimGray              0x696969] [Cyan                 0x00FFFF] 
+[OrangeRed            0xFF4500] 
+
+iteration 64:
+[LavenderBlush        0xFFF0F5] [Maroon               0x800000] 
+[DimGray              0x696969] [OrangeRed            0xFF4500] 
+[Cyan                 0x00FFFF] 
+
+iteration 65:
+[LavenderBlush        0xFFF0F5] [Maroon               0x800000] 
+[OrangeRed            0xFF4500] [Cyan                 0x00FFFF] 
+[DimGray              0x696969] 
+
+iteration 66:
+[LavenderBlush        0xFFF0F5] [Maroon               0x800000] 
+[OrangeRed            0xFF4500] [DimGray              0x696969] 
+[Cyan                 0x00FFFF] 
+
+iteration 67:
+[LavenderBlush        0xFFF0F5] [OrangeRed            0xFF4500] 
+[Cyan                 0x00FFFF] [DimGray              0x696969] 
+[Maroon               0x800000] 
+
+iteration 68:
+[LavenderBlush        0xFFF0F5] [OrangeRed            0xFF4500] 
+[Cyan                 0x00FFFF] [Maroon               0x800000] 
+[DimGray              0x696969] 
+
+iteration 69:
+[LavenderBlush        0xFFF0F5] [OrangeRed            0xFF4500] 
+[DimGray              0x696969] [Cyan                 0x00FFFF] 
+[Maroon               0x800000] 
+
+iteration 70:
+[LavenderBlush        0xFFF0F5] [OrangeRed            0xFF4500] 
+[DimGray              0x696969] [Maroon               0x800000] 
+[Cyan                 0x00FFFF] 
+
+iteration 71:
+[LavenderBlush        0xFFF0F5] [OrangeRed            0xFF4500] 
+[Maroon               0x800000] [Cyan                 0x00FFFF] 
+[DimGray              0x696969] 
+
+iteration 72:
+[LavenderBlush        0xFFF0F5] [OrangeRed            0xFF4500] 
+[Maroon               0x800000] [DimGray              0x696969] 
+[Cyan                 0x00FFFF] 
+
+iteration 73:
+[Maroon               0x800000] [Cyan                 0x00FFFF] 
+[DimGray              0x696969] [LavenderBlush        0xFFF0F5] 
+[OrangeRed            0xFF4500] 
+
+iteration 74:
+[Maroon               0x800000] [Cyan                 0x00FFFF] 
+[DimGray              0x696969] [OrangeRed            0xFF4500] 
+[LavenderBlush        0xFFF0F5] 
+
+iteration 75:
+[Maroon               0x800000] [Cyan                 0x00FFFF] 
+[LavenderBlush        0xFFF0F5] [DimGray              0x696969] 
+[OrangeRed            0xFF4500] 
+
+iteration 76:
+[Maroon               0x800000] [Cyan                 0x00FFFF] 
+[LavenderBlush        0xFFF0F5] [OrangeRed            0xFF4500] 
+[DimGray              0x696969] 
+
+iteration 77:
+[Maroon               0x800000] [Cyan                 0x00FFFF] 
+[OrangeRed            0xFF4500] [DimGray              0x696969] 
+[LavenderBlush        0xFFF0F5] 
+
+iteration 78:
+[Maroon               0x800000] [Cyan                 0x00FFFF] 
+[OrangeRed            0xFF4500] [LavenderBlush        0xFFF0F5] 
+[DimGray              0x696969] 
+
+iteration 79:
+[Maroon               0x800000] [DimGray              0x696969] 
+[Cyan                 0x00FFFF] [LavenderBlush        0xFFF0F5] 
+[OrangeRed            0xFF4500] 
+
+iteration 80:
+[Maroon               0x800000] [DimGray              0x696969] 
+[Cyan                 0x00FFFF] [OrangeRed            0xFF4500] 
+[LavenderBlush        0xFFF0F5] 
+
+iteration 81:
+[Maroon               0x800000] [DimGray              0x696969] 
+[LavenderBlush        0xFFF0F5] [Cyan                 0x00FFFF] 
+[OrangeRed            0xFF4500] 
+
+iteration 82:
+[Maroon               0x800000] [DimGray              0x696969] 
+[LavenderBlush        0xFFF0F5] [OrangeRed            0xFF4500] 
+[Cyan                 0x00FFFF] 
+
+iteration 83:
+[Maroon               0x800000] [DimGray              0x696969] 
+[OrangeRed            0xFF4500] [Cyan                 0x00FFFF] 
+[LavenderBlush        0xFFF0F5] 
+
+iteration 84:
+[Maroon               0x800000] [DimGray              0x696969] 
+[OrangeRed            0xFF4500] [LavenderBlush        0xFFF0F5] 
+[Cyan                 0x00FFFF] 
+
+iteration 85:
+[Maroon               0x800000] [LavenderBlush        0xFFF0F5] 
+[Cyan                 0x00FFFF] [DimGray              0x696969] 
+[OrangeRed            0xFF4500] 
+
+iteration 86:
+[Maroon               0x800000] [LavenderBlush        0xFFF0F5] 
+[Cyan                 0x00FFFF] [OrangeRed            0xFF4500] 
+[DimGray              0x696969] 
+
+iteration 87:
+[Maroon               0x800000] [LavenderBlush        0xFFF0F5] 
+[DimGray              0x696969] [Cyan                 0x00FFFF] 
+[OrangeRed            0xFF4500] 
+
+iteration 88:
+[Maroon               0x800000] [LavenderBlush        0xFFF0F5] 
+[DimGray              0x696969] [OrangeRed            0xFF4500] 
+[Cyan                 0x00FFFF] 
+
+iteration 89:
+[Maroon               0x800000] [LavenderBlush        0xFFF0F5] 
+[OrangeRed            0xFF4500] [Cyan                 0x00FFFF] 
+[DimGray              0x696969] 
+
+iteration 90:
+[Maroon               0x800000] [LavenderBlush        0xFFF0F5] 
+[OrangeRed            0xFF4500] [DimGray              0x696969] 
+[Cyan                 0x00FFFF] 
+
+iteration 91:
+[Maroon               0x800000] [OrangeRed            0xFF4500] 
+[Cyan                 0x00FFFF] [DimGray              0x696969] 
+[LavenderBlush        0xFFF0F5] 
+
+iteration 92:
+[Maroon               0x800000] [OrangeRed            0xFF4500] 
+[Cyan                 0x00FFFF] [LavenderBlush        0xFFF0F5] 
+[DimGray              0x696969] 
+
+iteration 93:
+[Maroon               0x800000] [OrangeRed            0xFF4500] 
+[DimGray              0x696969] [Cyan                 0x00FFFF] 
+[LavenderBlush        0xFFF0F5] 
+
+iteration 94:
+[Maroon               0x800000] [OrangeRed            0xFF4500] 
+[DimGray              0x696969] [LavenderBlush        0xFFF0F5] 
+[Cyan                 0x00FFFF] 
+
+iteration 95:
+[Maroon               0x800000] [OrangeRed            0xFF4500] 
+[LavenderBlush        0xFFF0F5] [Cyan                 0x00FFFF] 
+[DimGray              0x696969] 
+
+iteration 96:
+[Maroon               0x800000] [OrangeRed            0xFF4500] 
+[LavenderBlush        0xFFF0F5] [DimGray              0x696969] 
+[Cyan                 0x00FFFF] 
+
+iteration 97:
+[OrangeRed            0xFF4500] [Cyan                 0x00FFFF] 
+[DimGray              0x696969] [LavenderBlush        0xFFF0F5] 
+[Maroon               0x800000] 
+
+iteration 98:
+[OrangeRed            0xFF4500] [Cyan                 0x00FFFF] 
+[DimGray              0x696969] [Maroon               0x800000] 
+[LavenderBlush        0xFFF0F5] 
+
+iteration 99:
+[OrangeRed            0xFF4500] [Cyan                 0x00FFFF] 
+[LavenderBlush        0xFFF0F5] [DimGray              0x696969] 
+[Maroon               0x800000] 
+
+iteration 100:
+[OrangeRed            0xFF4500] [Cyan                 0x00FFFF] 
+[LavenderBlush        0xFFF0F5] [Maroon               0x800000] 
+[DimGray              0x696969] 
+
+iteration 101:
+[OrangeRed            0xFF4500] [Cyan                 0x00FFFF] 
+[Maroon               0x800000] [DimGray              0x696969] 
+[LavenderBlush        0xFFF0F5] 
+
+iteration 102:
+[OrangeRed            0xFF4500] [Cyan                 0x00FFFF] 
+[Maroon               0x800000] [LavenderBlush        0xFFF0F5] 
+[DimGray              0x696969] 
+
+iteration 103:
+[OrangeRed            0xFF4500] [DimGray              0x696969] 
+[Cyan                 0x00FFFF] [LavenderBlush        0xFFF0F5] 
+[Maroon               0x800000] 
+
+iteration 104:
+[OrangeRed            0xFF4500] [DimGray              0x696969] 
+[Cyan                 0x00FFFF] [Maroon               0x800000] 
+[LavenderBlush        0xFFF0F5] 
+
+iteration 105:
+[OrangeRed            0xFF4500] [DimGray              0x696969] 
+[LavenderBlush        0xFFF0F5] [Cyan                 0x00FFFF] 
+[Maroon               0x800000] 
+
+iteration 106:
+[OrangeRed            0xFF4500] [DimGray              0x696969] 
+[LavenderBlush        0xFFF0F5] [Maroon               0x800000] 
+[Cyan                 0x00FFFF] 
+
+iteration 107:
+[OrangeRed            0xFF4500] [DimGray              0x696969] 
+[Maroon               0x800000] [Cyan                 0x00FFFF] 
+[LavenderBlush        0xFFF0F5] 
+
+iteration 108:
+[OrangeRed            0xFF4500] [DimGray              0x696969] 
+[Maroon               0x800000] [LavenderBlush        0xFFF0F5] 
+[Cyan                 0x00FFFF] 
+
+iteration 109:
+[OrangeRed            0xFF4500] [LavenderBlush        0xFFF0F5] 
+[Cyan                 0x00FFFF] [DimGray              0x696969] 
+[Maroon               0x800000] 
+
+iteration 110:
+[OrangeRed            0xFF4500] [LavenderBlush        0xFFF0F5] 
+[Cyan                 0x00FFFF] [Maroon               0x800000] 
+[DimGray              0x696969] 
+
+iteration 111:
+[OrangeRed            0xFF4500] [LavenderBlush        0xFFF0F5] 
+[DimGray              0x696969] [Cyan                 0x00FFFF] 
+[Maroon               0x800000] 
+
+iteration 112:
+[OrangeRed            0xFF4500] [LavenderBlush        0xFFF0F5] 
+[DimGray              0x696969] [Maroon               0x800000] 
+[Cyan                 0x00FFFF] 
+
+iteration 113:
+[OrangeRed            0xFF4500] [LavenderBlush        0xFFF0F5] 
+[Maroon               0x800000] [Cyan                 0x00FFFF] 
+[DimGray              0x696969] 
+
+iteration 114:
+[OrangeRed            0xFF4500] [LavenderBlush        0xFFF0F5] 
+[Maroon               0x800000] [DimGray              0x696969] 
+[Cyan                 0x00FFFF] 
+
+iteration 115:
+[OrangeRed            0xFF4500] [Maroon               0x800000] 
+[Cyan                 0x00FFFF] [DimGray              0x696969] 
+[LavenderBlush        0xFFF0F5] 
+
+iteration 116:
+[OrangeRed            0xFF4500] [Maroon               0x800000] 
+[Cyan                 0x00FFFF] [LavenderBlush        0xFFF0F5] 
+[DimGray              0x696969] 
+
+iteration 117:
+[OrangeRed            0xFF4500] [Maroon               0x800000] 
+[DimGray              0x696969] [Cyan                 0x00FFFF] 
+[LavenderBlush        0xFFF0F5] 
+
+iteration 118:
+[OrangeRed            0xFF4500] [Maroon               0x800000] 
+[DimGray              0x696969] [LavenderBlush        0xFFF0F5] 
+[Cyan                 0x00FFFF] 
+
+iteration 119:
+[OrangeRed            0xFF4500] [Maroon               0x800000] 
+[LavenderBlush        0xFFF0F5] [Cyan                 0x00FFFF] 
+[DimGray              0x696969] 
+
+iteration 120:
+[OrangeRed            0xFF4500] [Maroon               0x800000] 
+[LavenderBlush        0xFFF0F5] [DimGray              0x696969] 
+[Cyan                 0x00FFFF] 
+
+----- Ch13_05_ex2() -----
+
+colors1:
+[OrangeRed            0xFF4500] [Orchid               0xDA70D6] 
+[PaleGoldenrod        0xEEE8AA] [PaleGreen            0x98FB98] 
+[PaleTurquoise        0xAFEEEE] [PaleVioletRed        0xDB7093] 
+[PapayaWhip           0xFFEFD5] [PeachPuff            0xFFDAB9] 
+
+colors2:
+[Orchid               0xDA70D6] [PeachPuff            0xFFDAB9] 
+[PaleGreen            0x98FB98] [PaleTurquoise        0xAFEEEE] 
+[PaleGoldenrod        0xEEE8AA] [PapayaWhip           0xFFEFD5] 
+[OrangeRed            0xFF4500] [PaleVioletRed        0xDB7093] 
+
+colors3:
+[Orchid               0xDA70D6] [PeachPuff            0xFFDAB9] 
+[PaleGreen            0x98FB98] [PaleTurquoise        0xAFEEEE] 
+[PaleGoldenrod        0xEEE8AA] [PapayaWhip           0xFFEFD5] 
+[Peru                 0xCD853F] [PaleVioletRed        0xDB7093] 
+
+is_permutation (colors1, colors2): true
+is_permutation (colors1, colors3): false

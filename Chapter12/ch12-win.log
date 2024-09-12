@@ -1,0 +1,352 @@
+
+----- Results for example Ch12_01 -----
+
+----- Ch12_01_ex1() -----
+
+airports (before sort):
+[US, JFK, John F Kennedy International (40.6397, -74.0789)] 
+[NZ, AKL, Auckland (-37.0081, 174.7917)] 
+[IN, DEL, Indira Gandhi International (28.5686, 77.1122)] 
+[DE, FRA, Frankfurt (50.0333, 8.5706)] 
+[US, ORD, O'Hare International (41.9786, -87.9047)] 
+[DE, MUN, Munich Franz Josef Stauss (48.3539, 11.7861)] 
+[SE, ARN, Stockholm Arlanda (59.5019, 17.9186)] 
+[CA, YVR, Vancouver International (49.1947, -123.1839)] 
+[AU, MEL, Melbourne (-37.6733, 144.8433)] 
+[US, LAX, Los Angeles International (33.9425, -118.4081)] 
+[GB, GLA, Glasgow (55.8719, -4.4331)] 
+[US, IAH, George Bush International (29.9844, -95.3414)] 
+[DE, BER, Berlin Brandenburg (52.3667, 13.5033)] 
+[CN, PVG, Shanghai Pudong International (31.1433, 121.8053)] 
+[JP, KIX, Kansai International (34.4306, 135.2303)] 
+[CA, YEG, Edmonton International (43.6767, -79.6306)] 
+[CA, YYZ, Toronto Pearson International (53.3100, -113.5794)] 
+[US, MCO, Orlando International (28.4294, -81.3089)] 
+[FR, CDG, Paris Charles de Gaulle (49.0097, 2.5478)] 
+[JP, NRT, Narita International (35.7653, 140.3856)] 
+[GB, LHR, Heathrow International (51.4775, -0.4614)] 
+[AU, SYD, Sydney Kingsford Smith (-33.9461, 151.1772)] 
+[NO, OSL, Oslo Gardermoen (60.2028, 11.0839)] 
+[CN, PEK, Beijing Capital International (40.0725, 116.5975)] 
+[CL, SCL, Santiago International (-33.3928, -70.7911)] 
+[CH, ZRH, Zurich (47.4314, 8.5492)] 
+[BR, BSB, Brasilia International (-15.8711, -47.9186)] 
+[NZ, WLG, Wellington International (-41.3272, 174.8053)] 
+[CA, YYC, Calgary International (51.1225, -114.0133)] 
+[FR, TLS, Toulouse-Blagnac (43.6350, 1.3678)] 
+
+airports (ascending by IATA):
+[NZ, AKL, Auckland (-37.0081, 174.7917)] 
+[SE, ARN, Stockholm Arlanda (59.5019, 17.9186)] 
+[DE, BER, Berlin Brandenburg (52.3667, 13.5033)] 
+[BR, BSB, Brasilia International (-15.8711, -47.9186)] 
+[FR, CDG, Paris Charles de Gaulle (49.0097, 2.5478)] 
+[IN, DEL, Indira Gandhi International (28.5686, 77.1122)] 
+[DE, FRA, Frankfurt (50.0333, 8.5706)] 
+[GB, GLA, Glasgow (55.8719, -4.4331)] 
+[US, IAH, George Bush International (29.9844, -95.3414)] 
+[US, JFK, John F Kennedy International (40.6397, -74.0789)] 
+[JP, KIX, Kansai International (34.4306, 135.2303)] 
+[US, LAX, Los Angeles International (33.9425, -118.4081)] 
+[GB, LHR, Heathrow International (51.4775, -0.4614)] 
+[US, MCO, Orlando International (28.4294, -81.3089)] 
+[AU, MEL, Melbourne (-37.6733, 144.8433)] 
+[DE, MUN, Munich Franz Josef Stauss (48.3539, 11.7861)] 
+[JP, NRT, Narita International (35.7653, 140.3856)] 
+[US, ORD, O'Hare International (41.9786, -87.9047)] 
+[NO, OSL, Oslo Gardermoen (60.2028, 11.0839)] 
+[CN, PEK, Beijing Capital International (40.0725, 116.5975)] 
+[CN, PVG, Shanghai Pudong International (31.1433, 121.8053)] 
+[CL, SCL, Santiago International (-33.3928, -70.7911)] 
+[AU, SYD, Sydney Kingsford Smith (-33.9461, 151.1772)] 
+[FR, TLS, Toulouse-Blagnac (43.6350, 1.3678)] 
+[NZ, WLG, Wellington International (-41.3272, 174.8053)] 
+[CA, YEG, Edmonton International (43.6767, -79.6306)] 
+[CA, YVR, Vancouver International (49.1947, -123.1839)] 
+[CA, YYC, Calgary International (51.1225, -114.0133)] 
+[CA, YYZ, Toronto Pearson International (53.3100, -113.5794)] 
+[CH, ZRH, Zurich (47.4314, 8.5492)] 
+
+airports (descending by latitude):
+[NO, OSL, Oslo Gardermoen (60.2028, 11.0839)] 
+[SE, ARN, Stockholm Arlanda (59.5019, 17.9186)] 
+[GB, GLA, Glasgow (55.8719, -4.4331)] 
+[CA, YYZ, Toronto Pearson International (53.3100, -113.5794)] 
+[DE, BER, Berlin Brandenburg (52.3667, 13.5033)] 
+[GB, LHR, Heathrow International (51.4775, -0.4614)] 
+[CA, YYC, Calgary International (51.1225, -114.0133)] 
+[DE, FRA, Frankfurt (50.0333, 8.5706)] 
+[CA, YVR, Vancouver International (49.1947, -123.1839)] 
+[FR, CDG, Paris Charles de Gaulle (49.0097, 2.5478)] 
+[DE, MUN, Munich Franz Josef Stauss (48.3539, 11.7861)] 
+[CH, ZRH, Zurich (47.4314, 8.5492)] 
+[CA, YEG, Edmonton International (43.6767, -79.6306)] 
+[FR, TLS, Toulouse-Blagnac (43.6350, 1.3678)] 
+[US, ORD, O'Hare International (41.9786, -87.9047)] 
+[US, JFK, John F Kennedy International (40.6397, -74.0789)] 
+[CN, PEK, Beijing Capital International (40.0725, 116.5975)] 
+[JP, NRT, Narita International (35.7653, 140.3856)] 
+[JP, KIX, Kansai International (34.4306, 135.2303)] 
+[US, LAX, Los Angeles International (33.9425, -118.4081)] 
+[CN, PVG, Shanghai Pudong International (31.1433, 121.8053)] 
+[US, IAH, George Bush International (29.9844, -95.3414)] 
+[IN, DEL, Indira Gandhi International (28.5686, 77.1122)] 
+[US, MCO, Orlando International (28.4294, -81.3089)] 
+[BR, BSB, Brasilia International (-15.8711, -47.9186)] 
+[CL, SCL, Santiago International (-33.3928, -70.7911)] 
+[AU, SYD, Sydney Kingsford Smith (-33.9461, 151.1772)] 
+[NZ, AKL, Auckland (-37.0081, 174.7917)] 
+[AU, MEL, Melbourne (-37.6733, 144.8433)] 
+[NZ, WLG, Wellington International (-41.3272, 174.8053)] 
+
+----- Ch12_01_ex2() -----
+airports (before stable_sort):
+[US JFK John F Kennedy International    ] [NZ AKL Auckland                        ] 
+[IN DEL Indira Gandhi International     ] [DE FRA Frankfurt                       ] 
+[US ORD O'Hare International            ] [DE MUN Munich Franz Josef Stauss       ] 
+[SE ARN Stockholm Arlanda               ] [CA YVR Vancouver International         ] 
+[AU MEL Melbourne                       ] [US LAX Los Angeles International       ] 
+[GB GLA Glasgow                         ] [US IAH George Bush International       ] 
+[DE BER Berlin Brandenburg              ] [CN PVG Shanghai Pudong International   ] 
+[JP KIX Kansai International            ] [CA YEG Edmonton International          ] 
+[CA YYZ Toronto Pearson International   ] [US MCO Orlando International           ] 
+[FR CDG Paris Charles de Gaulle         ] [JP NRT Narita International            ] 
+[GB LHR Heathrow International          ] [AU SYD Sydney Kingsford Smith          ] 
+[NO OSL Oslo Gardermoen                 ] [CN PEK Beijing Capital International   ] 
+[CL SCL Santiago International          ] [CH ZRH Zurich                          ] 
+[BR BSB Brasilia International          ] [NZ WLG Wellington International        ] 
+[CA YYC Calgary International           ] [FR TLS Toulouse-Blagnac                ] 
+
+airports (after stable_sort):
+[AU MEL Melbourne                       ] [AU SYD Sydney Kingsford Smith          ] 
+[BR BSB Brasilia International          ] [CA YVR Vancouver International         ] 
+[CA YEG Edmonton International          ] [CA YYZ Toronto Pearson International   ] 
+[CA YYC Calgary International           ] [CH ZRH Zurich                          ] 
+[CL SCL Santiago International          ] [CN PVG Shanghai Pudong International   ] 
+[CN PEK Beijing Capital International   ] [DE FRA Frankfurt                       ] 
+[DE MUN Munich Franz Josef Stauss       ] [DE BER Berlin Brandenburg              ] 
+[FR CDG Paris Charles de Gaulle         ] [FR TLS Toulouse-Blagnac                ] 
+[GB GLA Glasgow                         ] [GB LHR Heathrow International          ] 
+[IN DEL Indira Gandhi International     ] [JP KIX Kansai International            ] 
+[JP NRT Narita International            ] [NO OSL Oslo Gardermoen                 ] 
+[NZ AKL Auckland                        ] [NZ WLG Wellington International        ] 
+[SE ARN Stockholm Arlanda               ] [US JFK John F Kennedy International    ] 
+[US ORD O'Hare International            ] [US LAX Los Angeles International       ] 
+[US IAH George Bush International       ] [US MCO Orlando International           ] 
+
+
+----- Ch12_01_ex3() -----
+
+vec1 (initial values):
+  375   797   951   184   732   780   599   597   157   446   156   100 
+   59   460   867   334   602   143   709   651    21    57   970   722 
+  833   939   213     1   182   993   184   618   305   612   525     8 
+  432    24   292   525   612   400   140    47   293   974   367   233 
+  457    91   786   619   200   383   515   984   593   467    47   860 
+
+vec1 (after nth_element):
+   47   233   367   184   200   293    47   184   157    57   156   100 
+   59    21   140   334   292   143    24     8   213     1   182   305 
+   91   375   383   400   432   446   457   460   467   515   525   525 
+  593   597   651   709   612   602   867   599   780   732   951   797 
+  618   993   786   619   860   612   939   984   833   970   722   974 
+
+median value of vec1: 457
+
+----- Ch12_01_ex4() -----
+
+vec1 (initial order):
+  375  797  951  184  732  780  599  597  157  446  156  100   59  460  867  334
+is_sorted:       false
+is_sorted_until: 184
+
+vec1 (after first partial_sort):
+   59  100  156  157  184  951  797  780  732  599  597  446  375  460  867  334
+is_sorted:       false
+is_sorted_until: 797
+
+vec1 (after second partial_sort):
+   59  100  156  157  184  334  375  446  460  597  599  732  780  797  867  951
+is_sorted:       true
+is_sorted_until: sorted
+
+----- Results for example Ch12_02 -----
+
+----- Ch12_02_ex1() -----
+
+airports (ascending sort by IATA code):
+[NZ AKL Auckland                        ] [SE ARN Stockholm Arlanda               ] 
+[DE BER Berlin Brandenburg              ] [BR BSB Brasilia International          ] 
+[FR CDG Paris Charles de Gaulle         ] [IN DEL Indira Gandhi International     ] 
+[DE FRA Frankfurt                       ] [GB GLA Glasgow                         ] 
+[US IAH George Bush International       ] [US JFK John F Kennedy International    ] 
+[JP KIX Kansai International            ] [US LAX Los Angeles International       ] 
+[GB LHR Heathrow International          ] [US MCO Orlando International           ] 
+[AU MEL Melbourne                       ] [DE MUN Munich Franz Josef Stauss       ] 
+[JP NRT Narita International            ] [US ORD O'Hare International            ] 
+[NO OSL Oslo Gardermoen                 ] [CN PEK Beijing Capital International   ] 
+[CN PVG Shanghai Pudong International   ] [CL SCL Santiago International          ] 
+[AU SYD Sydney Kingsford Smith          ] [FR TLS Toulouse-Blagnac                ] 
+[NZ WLG Wellington International        ] [CA YEG Edmonton International          ] 
+[CA YVR Vancouver International         ] [CA YYC Calgary International           ] 
+[CA YYZ Toronto Pearson International   ] [CH ZRH Zurich                          ] 
+
+searching for airport: LAX
+airport found: [US, LAX, Los Angeles International (33.9425, -118.4081)]
+
+searching for airport: BOS
+airport not found - added to container
+
+searching for airport: ORD
+airport found: [US, ORD, O'Hare International (41.9786, -87.9047)]
+
+searching for airport: ANC
+airport not found - added to container
+
+searching for airport: BOS
+airport found: [US, BOS, Logan Internatioal (42.3631, -71.0064)]
+
+searching for airport: ANC
+airport found: [US, ANC, Ted Stevens Anchorage Intl. (61.1742, -149.9983)]
+
+airports (after new airport insertions):
+[NZ AKL Auckland                        ] [US ANC Ted Stevens Anchorage Intl.     ] 
+[SE ARN Stockholm Arlanda               ] [DE BER Berlin Brandenburg              ] 
+[US BOS Logan International             ] [BR BSB Brasilia International          ] 
+[FR CDG Paris Charles de Gaulle         ] [IN DEL Indira Gandhi International     ] 
+[DE FRA Frankfurt                       ] [GB GLA Glasgow                         ] 
+[US IAH George Bush International       ] [US JFK John F Kennedy International    ] 
+[JP KIX Kansai International            ] [US LAX Los Angeles International       ] 
+[GB LHR Heathrow International          ] [US MCO Orlando International           ] 
+[AU MEL Melbourne                       ] [DE MUN Munich Franz Josef Stauss       ] 
+[JP NRT Narita International            ] [US ORD O'Hare International            ] 
+[NO OSL Oslo Gardermoen                 ] [CN PEK Beijing Capital International   ] 
+[CN PVG Shanghai Pudong International   ] [CL SCL Santiago International          ] 
+[AU SYD Sydney Kingsford Smith          ] [FR TLS Toulouse-Blagnac                ] 
+[NZ WLG Wellington International        ] [CA YEG Edmonton International          ] 
+[CA YVR Vancouver International         ] [CA YYC Calgary International           ] 
+[CA YYZ Toronto Pearson International   ] [CH ZRH Zurich                          ] 
+
+----- Ch12_02_ex2() -----
+
+airports (descending sort by country code):
+[US ANC Ted Stevens Anchorage Intl.     ] [US BOS Logan International             ] 
+[US IAH George Bush International       ] [US JFK John F Kennedy International    ] 
+[US LAX Los Angeles International       ] [US MCO Orlando International           ] 
+[US ORD O'Hare International            ] [SE ARN Stockholm Arlanda               ] 
+[NZ AKL Auckland                        ] [NZ WLG Wellington International        ] 
+[NO OSL Oslo Gardermoen                 ] [JP KIX Kansai International            ] 
+[JP NRT Narita International            ] [IN DEL Indira Gandhi International     ] 
+[GB GLA Glasgow                         ] [GB LHR Heathrow International          ] 
+[FR CDG Paris Charles de Gaulle         ] [FR TLS Toulouse-Blagnac                ] 
+[DE BER Berlin Brandenburg              ] [DE FRA Frankfurt                       ] 
+[DE MUN Munich Franz Josef Stauss       ] [CN PEK Beijing Capital International   ] 
+[CN PVG Shanghai Pudong International   ] [CL SCL Santiago International          ] 
+[CH ZRH Zurich                          ] [CA YEG Edmonton International          ] 
+[CA YVR Vancouver International         ] [CA YYC Calgary International           ] 
+[CA YYZ Toronto Pearson International   ] [BR BSB Brasilia International          ] 
+[AU MEL Melbourne                       ] [AU SYD Sydney Kingsford Smith          ] 
+
+results for country code 'AA' 
+no airports found
+
+results for country code 'AU' 
+[AU, MEL, Melbourne (-37.6733, 144.8433)]
+[AU, SYD, Sydney Kingsford Smith (-33.9461, 151.1772)]
+
+results for country code 'DE' 
+[DE, BER, Berlin Brandenburg (52.3667, 13.5033)]
+[DE, FRA, Frankfurt (50.0333, 8.5706)]
+[DE, MUN, Munich Franz Josef Stauss (48.3539, 11.7861)]
+
+results for country code 'NN' 
+no airports found
+
+results for country code 'US' 
+[US, ANC, Ted Stevens Anchorage Intl. (61.1742, -149.9983)]
+[US, BOS, Logan International (42.3631, -71.0064)]
+[US, IAH, George Bush International (29.9844, -95.3414)]
+[US, JFK, John F Kennedy International (40.6397, -74.0789)]
+[US, LAX, Los Angeles International (33.9425, -118.4081)]
+[US, MCO, Orlando International (28.4294, -81.3089)]
+[US, ORD, O'Hare International (41.9786, -87.9047)]
+
+results for country code 'ZZ' 
+no airports found
+
+----- Results for example Ch12_03 -----
+
+----- Ch12_03_ex1() -----
+
+vec1 (before partition):
+  1   2   3   4   5   6   7   8   9  10  11  12  13  14  15  16  17  18  19  20 
+ 21  22  23  24  25  26  27  28  29  30  31  32  33  34  35  36  37  38  39  40 
+ 41  42  43  44  45  46  47  48  49  50  51  52  53  54  55  56  57  58  59  60 
+ 61  62  63  64  65  66  67  68  69  70  71  72  73  74  75  76  77  78  79  80 
+ 81  82  83  84  85  86  87  88  89  90  91  92  93  94  95  96  97  98  99 100 
+is_partitioned (before partition): false
+
+vec1 (after partition):
+ 97   2   3  89   5  83   7  79  73  71  11  67  13  61  59  53  17  47  19  43 
+ 41  37  23  31  29  26  27  28  25  30  24  32  33  34  35  36  22  38  39  40 
+ 21  42  20  44  45  46  18  48  49  50  51  52  16  54  55  56  57  58  15  60 
+ 14  62  63  64  65  66  12  68  69  70  10  72   9  74  75  76  77  78   8  80 
+ 81  82   6  84  85  86  87  88   4  90  91  92  93  94  95  96   1  98  99 100 
+is_partitioned (after partition): true
+
+*iter_pp: 26
+
+----- Ch12_03_ex2() -----
+
+prime numbers
+101 199 103 197 193 191 107 181 109 179 173 167 113 163 157 151 149 139 137 131 
+127 
+
+non-prime numbers
+122 123 124 125 126 121 128 129 130 120 132 133 134 135 136 119 138 118 140 141 
+142 143 144 145 146 147 148 117 150 116 152 153 154 155 156 115 158 159 160 161 
+162 114 164 165 166 112 168 169 170 171 172 111 174 175 176 177 178 110 180 108 
+182 183 184 185 186 187 188 189 190 106 192 105 194 195 196 104 198 102 200 
+
+----- Results for example Ch12_04 -----
+
+----- Ch12_04_ex1() -----
+
+vec1 using MT::print_ctr():
+owl net mat gum elf jam leg dog fan ant cat ink bag hat key 
+
+vec1 using print_heap():
+owl net mat leg key jam ink hat gum fan elf dog cat bag ant 
+
+vec2 using MT::print_ctr():
+ant bag elf cat dog ink key fan gum hat net jam mat owl leg 
+
+vec2 using print_heap():
+ant bag cat dog elf fan gum hat ink jam key leg mat net owl 
+
+----- Ch12_04_ex2() -----
+
+vec1 after make_heap():
+owl net mat leg key jam ink hat gum fan elf dog cat bag ant 
+
+vec1 after push_back() using 'cap':
+owl net mat leg key jam ink hat gum fan elf dog cat cap bag ant 
+
+vec1 after push_back() using 'pot':
+pot owl net mat leg key jam ink hat gum fan elf dog cat cap bag ant 
+
+vec1 after push_back() using 'bog':
+pot owl net mat leg key jam ink hat gum fan elf dog cat cap bog bag ant 
+
+vec1 after push_back() using 'lip':
+pot owl net mat lip leg key jam ink hat gum fan elf dog cat cap bog bag ant 
+
+removing elements: pot owl net mat lip 
+
+vec1 after pop_heap() operations:
+leg key jam ink hat gum fan elf dog cat cap bog bag ant 
+is_heap(vec1): true
+
+vec1 after std::ranges::sort_heap:
+ant bag bog cap cat dog elf fan gum hat ink jam key leg 
+is_heap(vec1): false

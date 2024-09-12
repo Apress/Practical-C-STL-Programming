@@ -1,0 +1,11 @@
+cmake_minimum_required(VERSION 3.27)
+
+project(Chapter01)
+add_subdirectory("./Ch01_01")
+add_subdirectory("./Ch01_02")
+add_subdirectory("./Ch01_03")
+add_subdirectory("./Ch01_04")
+add_subdirectory("./Ch01_05")
+add_subdirectory("./Ch01_06")
+add_subdirectory("./Ch01_07")
+add_subdirectory("./Ch01_08")
