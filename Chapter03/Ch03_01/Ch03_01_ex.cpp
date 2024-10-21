@@ -100,7 +100,7 @@ void Ch03_01_ex4()
         sum1 += *iter;
     std::println("sum1: {:d}", sum1);
 
-    // sum elements of arr1 using std::accmulate()
+    // sum elements of arr1 using std::accumulate()
     int sum2 = std::accumulate(arr1.begin(), arr1.end(), 0);
     std::println("sum2: {:d}", sum2);
 }
