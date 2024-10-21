@@ -46,7 +46,7 @@ void Ch07_03_ex1()
     // using at() - throws std::out_of_range if key is invalid
     std::println("\nmap1.at(2):  {}", map1.at(2));
     std::println("map1.at(11): {}", map1.at(11));
-//  std::println("map1.at(11): {}", map1.at(47));       // throws exception
+//  std::println("map1.at(47): {}", map1.at(47));       // throws exception
 
     // erase elements
     map1.erase(5);
@@ -77,7 +77,7 @@ void Ch07_03_ex2()
     std::println("map1.size(): {:d}", map1.size());
 
     // insert element using new key
-    map1["SYD"] = "Sydney Airport (Syndey, Australia)";
+    map1["SYD"] = "Sydney Airport (Sydney, Australia)";
     MT::print_map("\nmap1 (after SYD insert):\n", map1, fmt1, fmt2, epl_max);
     std::println("map1.size(): {:d}", map1.size());
 
