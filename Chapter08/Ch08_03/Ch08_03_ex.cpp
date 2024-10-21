@@ -73,11 +73,11 @@ void Ch08_03_ex2()
     auto hash_func = [](const std::string& s) -> size_t
     {
         auto c = static_cast<unsigned char>(s[0]);
-        return std::isalpha(c) ? std::toupper(c) : c % 26;
+        return std::isalpha(c) ? std::toupper(c) - 'A' + 1 : c % 32;
     };
 
     // initialize map1
-    constexpr size_t num_buckets {26};
+    constexpr size_t num_buckets {32};
     uno_map_hf_t map1(num_buckets, hash_func);
     get_airports(map1, 1);
     print_buckets("\nmap1 (initial values)", map1);
