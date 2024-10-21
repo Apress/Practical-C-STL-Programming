@@ -73,7 +73,7 @@ public:
                         break;
                 }
 
-                // write formated time to output file
+                // write formatted time to output file
                 const char* sep = (j + 1 < m_NumAlg) ? ", " : "\n";
                 std::string s {std::vformat(fmt, std::make_format_args(t_elapsed))};
                 std::print(ofs, "{:s}", s);
