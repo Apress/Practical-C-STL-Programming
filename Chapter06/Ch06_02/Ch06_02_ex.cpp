@@ -44,7 +44,7 @@ void Ch06_02_ex2()
 
     // using copy constructor
     auto book2 = book1;
-    std::println("\nAfter book2 asignment:");
+    std::println("\nAfter book2 assignment:");
     std::println("book1 (use_count: {}): {}", book1.use_count(), *book1);
     std::println("book2 (use_count: {}): {}", book2.use_count(), *book2);
 
